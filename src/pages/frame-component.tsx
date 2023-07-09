@@ -3,7 +3,6 @@ import CollaborationCard from "../components/collaboration-card";
 import ChatContainer from "../components/chat-container";
 import InfoSectionContainer from "../components/info-section-container";
 import WorkOptionsContainer from "../components/work-options-container";
-import SectionContainer from "../components/section-container";
 import CompanyCard from "../components/company-card";
 
 const FrameComponent: FunctionComponent = () => {
@@ -29,12 +28,10 @@ const FrameComponent: FunctionComponent = () => {
           alt=""
           src="/calender@2x.png"
         />
-        <SectionContainer />
-        <b className="absolute top-[236.94rem] left-[calc(50%_-_373px)] leading-[4rem]">
-          What people say about Team
-        </b>
+        
+      
         <CompanyCard />
-        <img
+        {/* <img
           className="absolute top-[162.94rem] left-[67.88rem] w-[11.88rem] h-[5.09rem] object-cover"
           alt=""
           src="/image4@2x.png"
@@ -53,7 +50,7 @@ const FrameComponent: FunctionComponent = () => {
           className="absolute top-[217.88rem] left-[10.31rem] w-[11.88rem] h-[5.09rem] object-cover"
           alt=""
           src="/image7@2x.png"
-        />
+        /> */}
       </div>
     </div>
   );

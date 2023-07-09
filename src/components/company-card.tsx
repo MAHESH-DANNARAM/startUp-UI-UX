@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { TextField, InputAdornment, Icon } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CompanyCard: FunctionComponent = () => {
   return (
@@ -24,18 +25,18 @@ const CompanyCard: FunctionComponent = () => {
           Company
         </div>
         <div className="absolute top-[2.88rem] left-[0rem] flex flex-col items-start justify-start gap-[0.75rem] text-[0.88rem] text-off-white">
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          <Link className="relative tracking-[0.01em] leading-[1.44rem] text-white" to={""}>
             Product
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             Blog
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             Support
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem] hidden">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem] hidden  text-white" to={""}>
             Support
-          </div>
+          </Link>
         </div>
       </div>
       <div className="absolute top-[5.94rem] left-[39.69rem] w-[8.5rem] h-[10.88rem]">
@@ -43,16 +44,16 @@ const CompanyCard: FunctionComponent = () => {
           Features
         </div>
         <div className="absolute top-[2.88rem] left-[0rem] flex flex-col items-start justify-start gap-[0.75rem] text-[0.88rem] text-off-white">
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             Screen Sharing
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">{`iOS & Android Apps`}</div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>{`iOS & Android Apps`}</Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             File Sharing
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             User Managment
-          </div>
+          </Link>
         </div>
       </div>
       <div className="absolute top-[5.94rem] left-[52.13rem] w-[8.63rem] h-[10rem]">
@@ -60,12 +61,12 @@ const CompanyCard: FunctionComponent = () => {
           Contact Us
         </div>
         <div className="absolute top-[2.75rem] left-[0rem] flex flex-col items-start justify-center gap-[0.75rem] text-[0.88rem] text-off-white">
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             info@teamapp.com
-          </div>
-          <div className="relative tracking-[0.01em] leading-[1.44rem]">
+          </Link>
+          <Link className="relative tracking-[0.01em] leading-[1.44rem]  text-white" to={""}>
             1-800-200-300
-          </div>
+          </Link>
           <div className="relative tracking-[0.01em] leading-[1.44rem]">
             <p className="m-0">1010 Sunset Blv.</p>
             <p className="m-0">Palo Alto, California</p>
@@ -78,9 +79,9 @@ const CompanyCard: FunctionComponent = () => {
           Subscribe to our newseller
         </div>
         <TextField
-          className="[border:none] bg-[transparent] absolute top-[4.94rem] left-[0rem]"
+          className="[border:none] bg-[transparent] absolute top-[4.94rem] left-[0rem]  bg-white"
           sx={{ width: 268 }}
-          color="primary"
+          // color="primary"
           variant="outlined"
           type="text"
           label="Email"

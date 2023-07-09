@@ -9,7 +9,7 @@ const CollaborationCard: FunctionComponent = () => {
     <div className="absolute top-[0rem] left-[0rem] bg-primary-0 w-[90rem] h-[50rem] overflow-hidden text-left text-[3.13rem] text-off-white font-caption-desktop">
       <img className="absolute top-[0rem] left-[0rem] w-[90rem] h-[50rem] object-cover"
         alt=""
-        src="/heroimg@2x.png"
+        src="/ai_img.png"
       />
       <div className="absolute top-[2.5rem] left-[calc(50%_-_580px)] w-[72.5rem] flex flex-row items-center justify-between">
         <div className="relative w-[8.63rem] h-[3.25rem]">
@@ -36,7 +36,10 @@ const CollaborationCard: FunctionComponent = () => {
             Support
           </Link>
           <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to={"/"}>
-            Log In
+            Upcoming 
+          </Link>
+          <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to={"/"}>
+            API
           </Link>
           <Button variant="contained" color="primary">
             Get Access
@@ -53,7 +56,7 @@ const CollaborationCard: FunctionComponent = () => {
             project progress.
           </div>
         </div>
-        <div className="w-[35.19rem] flex flex-row items-start justify-start gap-[1rem]">
+        <div className="w-[35.19rem] flex flex-row items-start justify-start gap-[1rem]  text-white border-white">
           <TextField
             className="[border:none] bg-[transparent] self-stretch"
             sx={{ width: 298 }}

@@ -1,5 +1,6 @@
 import { FunctionComponent, useMemo } from "react";
 import CSS, { Property } from "csstype";
+import { Link } from "react-router-dom";
 
 type TeamContainerType = {
   teamChatText?: string;
@@ -34,7 +35,7 @@ const TeamContainer: FunctionComponent<TeamContainerType> = ({
         </div>
       </div>
       <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[1rem] text-soft-blue">
-        <div className="relative [text-decoration:underline] leading-[150%] font-medium">{`Learn more `}</div>
+        <Link className="relative [text-decoration:underline] leading-[150%] font-medium" to={"/"}>{`Learn more `}</Link>
         <img
           className="relative w-[1.88rem] h-[1.88rem]"
           alt=""
