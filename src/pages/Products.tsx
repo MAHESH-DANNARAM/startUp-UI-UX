@@ -2,6 +2,7 @@ import { FunctionComponent, useEffect } from "react";
 import PAMContainer from "../components/p-a-m-container";
 import DashboardCard from "../components/dashboard-card";
 import SpecialPremiumAccountContainer from "../components/special-premium-account-container";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -37,11 +38,12 @@ const Products: FunctionComponent = () => {
   }, []);
 
   return (
+    <>
     <div className="relative w-full flex flex-col items-center justify-center">
       <div className="w-full overflow-hidden flex flex-col items-center justify-center">
         <div className="w-full flex flex-col items-center justify-center">
           <div
-            className=" bg-gray-200 [backdrop-filter:blur(40px)] w-full h-[64.56rem] overflow-hidden shrink-0 [&.animate]:lg:animate-[1s_ease_0s_1_normal_forwards_slide-in-top] lg:opacity-[0]"
+            className=" bg-gray-200 [backdrop-filter:blur(40px)] w-full h-[64.56rem] overflow-hidden shrink-0 "
             data-animate-on-scroll
           >
              <img
@@ -79,15 +81,13 @@ const Products: FunctionComponent = () => {
               productIdsAndDimensions26="/sms.svg"
               productIdsAndDimensions262="/setting.svg"
             />
-            <div className="absolute top-[1.63rem] left-[21.88rem] flex flex-col items-start justify-center gap-[3.25rem]">
-              <DashboardCard productId="/vuesaxlinearsearchnormal.svg" />
-              <SpecialPremiumAccountContainer dimensionCode="/group-11.svg" />
-            
-            </div>
+          
           </div>
         </div>
       </div>
     </div>
+    <Outlet />
+    </>
   );
 };
 

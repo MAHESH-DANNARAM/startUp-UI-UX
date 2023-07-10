@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { TextField, InputAdornment, Icon } from "@mui/material";
+import { Link } from "react-router-dom";
 
 type PAMContainerType = {
   productIds?: string;
@@ -39,6 +40,7 @@ const PAMContainer: FunctionComponent<PAMContainerType> = ({
           <div className="w-[9.49rem] h-[21.73rem] flex flex-col items-start justify-center gap-[0.5rem]">
             <div className="flex flex-row items-center justify-start gap-[0.34rem]">
               <div className="w-[1.53rem] h-[1.51rem] flex flex-col py-[0rem] px-[0rem] box-border items-start justify-end">
+              
                 <div className="flex flex-row items-start justify-start">
                   <img
                     className="relative w-[1.39rem] h-[1.39rem]"
@@ -46,6 +48,7 @@ const PAMContainer: FunctionComponent<PAMContainerType> = ({
                     src={productIds}
                   />
                 </div>
+                
                 <div className="[filter:blur(27.23px)] flex flex-row items-start justify-start opacity-[0.2] mt-[-1.37rem]">
                   <img
                     className="relative w-[1.51rem] h-[1.51rem]"
@@ -54,11 +57,39 @@ const PAMContainer: FunctionComponent<PAMContainerType> = ({
                   />
                 </div>
               </div>
+              
 
               <div className="flex flex-row p-[0.68rem] items-start justify-start">
                 <div className="relative">Campaigns</div>
               </div>
             </div>
+
+            <Link className="flex flex-row text-slate-400/80 no-underline items-center justify-start gap-[0.34rem]" to={"/product/transcript"}>
+              <div className="w-[1.53rem] h-[1.51rem] flex flex-col py-[0rem] px-[0rem] box-border items-start justify-end">
+              
+                <div className="flex flex-row items-start justify-start">
+                  <img
+                    className="relative w-[1.39rem] h-[1.39rem]"
+                    alt=""
+                    src={productIds}
+                  />
+                </div>
+                
+                <div className="[filter:blur(27.23px)] flex flex-row items-start justify-start opacity-[0.2] mt-[-1.37rem]">
+                  <img
+                    className="relative w-[1.51rem] h-[1.51rem]"
+                    alt=""
+                    src={productDimensions}
+                  />
+                </div>
+              </div>
+              
+
+              <div className="flex flex-row p-[0.68rem] items-start justify-start">
+                <div className="relative">transcript</div>
+              </div>
+            </Link>
+
             <div className="flex flex-row items-center justify-start gap-[0.34rem]">
               <div className="w-[1.53rem] h-[1.51rem] flex flex-col py-[0rem] px-[0rem] box-border items-start justify-end">
                 <div className="flex flex-row items-start justify-start">
