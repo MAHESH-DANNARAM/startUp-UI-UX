@@ -9,7 +9,7 @@ const CollaborationCard: FunctionComponent = () => {
     <div className="absolute top-[0rem] left-[0rem] bg-primary-0 w-[90rem] h-[50rem] overflow-hidden text-left text-[3.13rem] text-off-white font-caption-desktop">
       <img className="absolute top-[0rem] left-[0rem] w-[90rem] h-[50rem] object-cover"
         alt=""
-        src="/ai_img.png"
+        src="/ai.jpeg"
       />
       <div className="absolute top-[2.5rem] left-[calc(50%_-_580px)] w-[72.5rem] flex flex-row items-center justify-between">
         <div className="relative w-[8.63rem] h-[3.25rem]">
@@ -26,7 +26,9 @@ const CollaborationCard: FunctionComponent = () => {
           />
         </div>
         <div className="flex-row items-center justify-between flex space-x-6  text-[1rem]">
-          <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to="/">
+          <Link 
+           className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]"
+           to="/">
             Product
           </Link>
           <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to={"/"}>

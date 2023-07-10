@@ -24,7 +24,7 @@ function App() {
 
     switch (pathname) {
       case "/":
-        title = "";
+        title = "AI The Next Generation";
         metaDescription = "";
         break;
     }
