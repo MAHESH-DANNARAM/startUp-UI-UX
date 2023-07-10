@@ -26,7 +26,7 @@ const CollaborationCard: FunctionComponent = () => {
           />
         </div>
         <div className="flex-row items-center justify-between flex space-x-6  text-[1rem]">
-          <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to="/">
+          <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to="/product">
             Product
           </Link>
           <Link className="relative [text-decoration:underline] leading-[150%] text-slate-50 font-medium [text-shadow:0px_8px_16px_rgba(35,_35,_64,_0.6)]" to={"/"}>
