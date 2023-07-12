@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import Products from "../Products";
 import SpecialPremiumAccountContainer from "../../components/special-premium-account-container";
 import DashboardCard from "../../components/dashboard-card";
 
