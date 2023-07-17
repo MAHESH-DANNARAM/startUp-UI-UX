@@ -6,9 +6,8 @@ import {
 } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loaders/Loader";
-import FrameComponent from "./pages/frame-component";
-import Products from './pages/Products';
-import Transcript from "./pages/pages items/transcript";
+import Home from "./pages/Home";
+
 import { useEffect } from "react";
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
   return (
     <Suspense fallback={<Loader/>}>
     <Routes>
-      <Route path="/" element={<FrameComponent />} />
+      <Route path="/" element={<Home/>} />
       <Route path="product/*" element={<Productsroutes/>}/>
     </Routes>
     </Suspense>
