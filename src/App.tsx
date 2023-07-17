@@ -6,12 +6,10 @@ import {
 } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loaders/Loader";
-import Home from "./pages/Home";
-
 import { useEffect } from "react";
 
 function App() {
-  const Productsroutes = lazy(() => import("./routes/productRoutes/productroutes")); 
+  const Home = lazy(() => import("./routes/Homeroutes/HomeRoutes")); 
 
   const action = useNavigationType();
   const location = useLocation();
@@ -26,8 +24,7 @@ function App() {
   return (
     <Suspense fallback={<Loader/>}>
     <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="product/*" element={<Productsroutes/>}/>
+      <Route path="/" element={<Home/>} />      
     </Routes>
     </Suspense>
   );
