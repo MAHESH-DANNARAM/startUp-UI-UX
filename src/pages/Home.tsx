@@ -26,45 +26,78 @@ export default function Home() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span></span>
+              <span>rtree</span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-
+            <div
+              className="navbar-collapse visible"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Link
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form className="d-flex" role="search">
+                <input
+                  className="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button className="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
         </nav>
 
         <header className="header">
           <div className="overlay">
-            <h6 className="subtitle">Small Team With Big Ideas</h6>
             <h1 className="title">Creative Studio</h1>
+            <h1 className="subtitle">Small Team With Big Ideas</h1>
             <div className="buttons text-center">
               <a
                 href="#service"
@@ -81,31 +114,32 @@ export default function Home() {
             </div>
           </div>
         </header>
-
-        <div className="box text-center">
-          <div className="box-item">
-            <i className="ti-vector"></i>
-            <h6 className="box-title">UX/UI Design</h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-              excepturi, repellat esse laborum explicabo quia.
-            </p>
-          </div>
-          <div className="box-item">
-            <i className="ti-filter"></i>
-            <h6 className="box-title">Web Development</h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-              excepturi, repellat esse laborum explicabo quia.
-            </p>
-          </div>
-          <div className="box-item">
-            <i className="ti-mobile"></i>
-            <h6 className="box-title">App Design</h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-              excepturi, repellat esse laborum explicabo quia.
-            </p>
+        <div className=" pt-[8.5rem]">
+          <div className="box text-center">
+            <div className="box-item">
+              <i className="ti-vector"></i>
+              <h6 className="box-title">UX/UI Design</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                excepturi, repellat esse laborum explicabo quia.
+              </p>
+            </div>
+            <div className="box-item">
+              <i className="ti-filter"></i>
+              <h6 className="box-title">Web Development</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                excepturi, repellat esse laborum explicabo quia.
+              </p>
+            </div>
+            <div className="box-item">
+              <i className="ti-mobile"></i>
+              <h6 className="box-title">App Design</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                excepturi, repellat esse laborum explicabo quia.
+              </p>
+            </div>
           </div>
         </div>
 
