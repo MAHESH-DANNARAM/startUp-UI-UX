@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/startUp-UI-UX/static/css/main.f7a10fb4.css",
+    "main.js": "/startUp-UI-UX/static/js/main.814e82de.js",
+    "static/css/305.119af8a9.chunk.css": "/startUp-UI-UX/static/css/305.119af8a9.chunk.css",
+    "static/js/305.9e65fdb8.chunk.js": "/startUp-UI-UX/static/js/305.9e65fdb8.chunk.js",
+    "static/js/787.b86a8e45.chunk.js": "/startUp-UI-UX/static/js/787.b86a8e45.chunk.js",
+    "static/media/header.jpg": "/startUp-UI-UX/static/media/header.e59e1a63bedc5fec03d5.jpg",
+    "static/media/themify.svg?-fvbane": "/startUp-UI-UX/static/media/themify.f0fc8c798eac5636249c.svg",
+    "static/media/section.jpg": "/startUp-UI-UX/static/media/section.b9d7b466345d3b42da01.jpg",
+    "static/media/themify.eot": "/startUp-UI-UX/static/media/themify.9bad94440d49256265a5.eot",
+    "static/media/themify.ttf?-fvbane": "/startUp-UI-UX/static/media/themify.eda8b94308c6f538f04a.ttf",
+    "static/media/themify.woff?-fvbane": "/startUp-UI-UX/static/media/themify.29b39089170885ae2967.woff",
+    "index.html": "/startUp-UI-UX/index.html",
+    "main.f7a10fb4.css.map": "/startUp-UI-UX/static/css/main.f7a10fb4.css.map",
+    "main.814e82de.js.map": "/startUp-UI-UX/static/js/main.814e82de.js.map",
+    "305.119af8a9.chunk.css.map": "/startUp-UI-UX/static/css/305.119af8a9.chunk.css.map",
+    "305.9e65fdb8.chunk.js.map": "/startUp-UI-UX/static/js/305.9e65fdb8.chunk.js.map",
+    "787.b86a8e45.chunk.js.map": "/startUp-UI-UX/static/js/787.b86a8e45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7a10fb4.css",
+    "static/js/main.814e82de.js"
+  ]
+}
