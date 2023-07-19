@@ -1,7 +1,17 @@
-import { Link } from "react-router-dom";
+// import { Collapse } from 'flowbite';
 import "../components/frontend/assets/css/creative-studio.css";
 import "../components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
+import Products from './Products';
 export default function Home() {
+//   const collapse = new Collapse($targetEl, $triggerEl, options);
+//   // show the target element
+// collapse.expand();
+
+// // hide the target element
+// collapse.collapse();
+
+// // toggle the visibility of the target element
+// collapse.toggle();
   return (
     <>
       <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -41,55 +51,70 @@ export default function Home() {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Link
+                    About
                   </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled">Disabled</a>
+                  <a className="nav-link" href="/products">
+                    Products
+                  </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Services
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Pricing
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    API
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/login">
+                    Login
+                  </a>
+                </li>
+                {/* <div className="flex items-center md:order-2">
+                  <button
+                    type="button"
+                    className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom"
+                  >
+                    <span className="sr-only">Open user menu</span>
+                    <img
+                      className="w-8 h-8 rounded-full"
+                      src="/docs/images/people/profile-picture-3.jpg"
+                      alt="user photo"
+                    />
+                  </button>
+                  <div
+                    className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                    id="user-dropdown"
+                  >
+                    <div className="px-4 py-3">
+                      <span className="block text-sm text-gray-900 dark:text-white">
+                        Bonnie Green
+                      </span>
+                      <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
+                        name@flowbite.com
+                      </span>
+                    </div>
+                  </div>
+                </div> */}
               </ul>
-              <form className="d-flex" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </nav>
@@ -114,6 +139,7 @@ export default function Home() {
             </div>
           </div>
         </header>
+
         <div className=" pt-[8.5rem]">
           <div className="box text-center">
             <div className="box-item">
@@ -213,7 +239,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-filter text-primary"></i>
                     </h2>
-                    <h6 className="card-title">corporis assumenda</h6>
+                    <h6 className="card-title">AI Products</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -227,7 +253,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-paint-roller text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Debitis amet</h6>
+                    <h6 className="card-title">IOT Based on Chat-GPT</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -241,7 +267,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-ruler-pencil text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Libero temporibus</h6>
+                    <h6 className="card-title">Virtual Reality</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -255,7 +281,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-layers text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Perspiciatis explicabo</h6>
+                    <h6 className="card-title">Augmented Reality</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -269,7 +295,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-bolt text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Poluptatum</h6>
+                    <h6 className="card-title">AI in Pharma</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -283,7 +309,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-palette text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Nihil dicta</h6>
+                    <h6 className="card-title">Education</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -297,7 +323,7 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-stats-up text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Repellendus maxime</h6>
+                    <h6 className="card-title">Telecommunication</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!
@@ -311,7 +337,21 @@ export default function Home() {
                     <h2 className="mb-4">
                       <i className="ti-location-arrow text-primary"></i>
                     </h2>
-                    <h6 className="card-title">Sint vitae</h6>
+                    <h6 className="card-title">Movies</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Debitis amet saepe et!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4 col-md-3">
+                <div className="card mb-4">
+                  <div className="card-body">
+                    <h2 className="mb-4">
+                      <i className="ti-location-arrow text-primary"></i>
+                    </h2>
+                    <h6 className="card-title">Marketing Chatbots</h6>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Debitis amet saepe et!

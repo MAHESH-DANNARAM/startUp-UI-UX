@@ -7,6 +7,8 @@ import {
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loaders/Loader";
 import { useEffect } from "react";
+import Products from "./pages/Products";
+import Login from "./pages/Login";
 
 function App() {
   const Home = lazy(() => import("./routes/Homeroutes/HomeRoutes")); 
@@ -24,7 +26,9 @@ function App() {
   return (
     <Suspense fallback={<Loader/>}>
     <Routes>
-      <Route path="/" element={<Home/>} />      
+      <Route path="/" element={<Home/>} />   
+      <Route path="/products" element={<Products />} />   
+      <Route path="/login" element={<Login />} /> 
     </Routes>
     </Suspense>
   );
