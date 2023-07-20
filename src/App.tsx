@@ -11,8 +11,12 @@ import Login from "./pages/Login";
 
 function App() {
   const Home = lazy(() => import("./routes/Homeroutes/HomeRoutes")); 
+<<<<<<< HEAD
   const Products = lazy(()=> import("./routes/Homeroutes/indexelement"))
 
+=======
+  const Products = lazy(() => import("./routes/Homeroutes/Indexelement"))
+>>>>>>> d5c3b79ab3d927be21de2865accc79dc8b53f3c8
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
