@@ -7,7 +7,7 @@ import {
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loaders/Loader";
 import { useEffect } from "react";
-import Products from "./pages/Products";
+import Products from "./pages/Indexelement/Pages/Products";
 import Login from "./pages/Login";
 
 function App() {
