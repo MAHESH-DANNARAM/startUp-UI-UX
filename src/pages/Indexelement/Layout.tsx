@@ -130,7 +130,7 @@ export default function Layout() {
             <span>Menu</span>
             <li>
               <a
-                href="#"
+                href="/text_to_image"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span className="ml-3">Text to Image</span>
@@ -209,6 +209,7 @@ export default function Layout() {
           </ul>
         </div>
       </aside>
+      <Outlet />
     </>
   );
 }

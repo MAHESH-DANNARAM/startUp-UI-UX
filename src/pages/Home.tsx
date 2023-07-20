@@ -1,7 +1,7 @@
 // import { Collapse } from 'flowbite';
 import "../components/frontend/assets/css/creative-studio.css";
 import "../components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
-import Products from './Indexelement/Pages/Products';
+import Products from './Indexelement/Pages/Demo';
 export default function Home() {
 //   const collapse = new Collapse($targetEl, $triggerEl, options);
 //   // show the target element
