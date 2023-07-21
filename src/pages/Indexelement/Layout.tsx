@@ -3,96 +3,6 @@ import { Outlet } from "react-router-dom";
 export default function Layout() {
   return (
     <>
-    
-    <aside
-        id="logo-sidebar"
-        className="fixed top-0 left-0 z-40 w-71 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
-        aria-label="Sidebar"
-      >
-        <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
-          <ul className="space-y-2 font-medium">
-            <span>Menu</span>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="ml-3">Text to Image</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Text to Video
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Text to Voice with Voice Clone
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Text to 3D Objects
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Text to charts
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Text to Music
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Transcripts
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <span className="flex-1 ml-3 whitespace-nowrap">
-                  Video Generation using 3D Avatar
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
       <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
@@ -220,7 +130,7 @@ export default function Layout() {
             <span>Menu</span>
             <li>
               <a
-                href="/text_to_image"
+                href="/image"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span className="ml-3">Text to Image</span>
@@ -299,11 +209,8 @@ export default function Layout() {
           </ul>
         </div>
       </aside>
-<<<<<<< HEAD
-      <Outlet/>
-=======
+      
       <Outlet />
->>>>>>> d5c3b79ab3d927be21de2865accc79dc8b53f3c8
     </>
   );
 }
