@@ -1,7 +1,6 @@
 import { useState, FormEvent } from "react";
-import Model from "./model";
-
-export default function Text_to_Image() {
+import D3_model from "./3d_model";
+export default function Text_to_3d() {
   const [selectedForm, setSelectedForm] = useState<number | null>(null);
 
   const showForm = (formId: number | null) => {
@@ -24,90 +23,115 @@ export default function Text_to_Image() {
         >
           Gnerate Image
         </button>
-    
       </div>
-      {selectedForm === ("form1" as unknown) && (
-        
-        <Model />
-      
-     )} 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="grid gap-4">
-         
-          
-       
-        </div>
+      {selectedForm === ("form1" as unknown) && <D3_model />}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10">
+        <div className="grid gap-4"></div>
+
         <div className="grid gap-4">
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              src="../imgs/Picture1.png"
               alt=""
             />
+            <div>
+              <span>
+                Design an assortment of adrenaline-pumping, high-tech sports set
+                in the distant future
+              </span>
+            </div>
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+              src="../imgs/Picture2.png"
               alt=""
             />
+            <span>
+              Dive into the depths of the ocean and visualize an otherworldly
+              underwater realm with exotic marine life and ancient ruins
+            </span>
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              src="../imgs/Picture3.png"
               alt=""
             />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-              alt=""
-            />
+            <span>
+              Create a series of dream-like and surreal images that challenge
+              reality and evoke emotions through abstract symbolism
+            </span>
           </div>
         </div>
         <div className="grid gap-4">
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+              src="../imgs/Picture4.png"
               alt=""
             />
+            <span>
+              World: Illustrate a world reclaimed by nature after an apocalyptic
+              event, with abandoned cities, overgrown landscapes, and new
+              wildlife
+            </span>
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+              src="../imgs/Picture5.png"
               alt=""
             />
+            <span>
+              A digital illustration of a steampunk flying machine in space with
+              cogs and mechanisms and eagles, 4k, detailed, trending in
+              artstation, fantasy vivid colors
+            </span>
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+              src="../imgs/Picture6.png"
               alt=""
             />
+            <span>Cyberpunk style city street at night, Expressionism</span>
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="../imgs/Picture7.png"
+              alt=""
+            />
+            <span>Portrait of a Sci-Fi man, peaceful, digital art</span>
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="../imgs/Picture8.png"
+              alt=""
+            />
+            <span>
+              Generate an image of a grand, magical library filled with books
+              that contain hidden knowledge and secrets
+            </span>
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="../imgs/Picture9.png"
+              alt=""
+            />
+            <span>
+              Visualize long-lost jungle ruins overgrown with exotic plants,
+              hiding ancient artifacts and mysteries.
+            </span>
           </div>
         </div>
       </div>
-       
     </>
   );
 }

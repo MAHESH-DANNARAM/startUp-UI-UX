@@ -11,17 +11,17 @@ export default function Text_to_Voice() {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-white bg-crosses min-h-full flex-1">
+      <div className="flex flex-col items-center bg-white bg-crosses min-h-full flex-1 pl-[18rem] pt-[5rem] pr-[1rem]">
         <div className="py-2u 2xl:pb-6u 2xl:pt-3u max-w-screen-2xl w-full">
           <div className="-mb-2u">
             <section className="content relative max-w-screen-2xl bg-bottom bg-no-repeat">
               <div className="relative w-full flex flex-col xl:flex-row text-left gap-1u xl:gap-2u">
                 <div className="xl:w-1/3 flex-shrink-0">
-                  <h1 className="font-sans block font-bold text-black text-sm flex-shrink-0 tracking-tight text-start">
+                  <h1 className="font-sans block font-bold text-black text-[2rem] flex-shrink-0 tracking-tight text-start">
                     Generative Voice AI
                   </h1>
-                  <span className="font-serif text-xl block font-normal text-gray-700 max-w-xl mt-5 xl:mb-12 text-start">
-                    Explore the most advanced text to speech and voice cloning
+                  <span className="font-serif text-[13px] block font-normal text-gray-700 max-w-xl mt-5 xl:mb-12 text-start">
+                    FATS the most advanced text to speech and voice cloning
                     software ever. Create lifelike voiceovers for your content
                     or use our AI voice generator as an easy-to-use text reader.
                   </span>
@@ -92,12 +92,14 @@ export default function Text_to_Voice() {
                         <textarea
                           // autoFocus=""
                           data-testid="tryout-textarea"
-                          className="font-serif text-lg bg-transparent p-0 resize-none w-full outline-none focus:ring-0 ring-0 border-none placeholder:text-gray-200"
-                          placeholder="Eleven lets you voice any length of text in top quality, all while automatically matching what is being said with how it’s being said. The model works best on longer texts, so type in at least a few sentences."
+                          className="font-serif text-lg bg-transparent h-[10rem] p-0 resize-none w-full outline-none focus:ring-0 ring-0 border-none placeholder:text-gray-200"
+                          placeholder="FATS lets you voice any length of text in top quality, all while automatically matching what is being said with how it’s being said. The model works best on longer texts, so type in at least a few sentences."
                           // rows="5"
                           // maxLength="333"
                           // spellcheck="false"
                         ></textarea>
+                        
+  
                         <div className="absolute bottom-4 left-7">
                           <button
                             className="relative cursor-pointer rounded-lg mb-2 text-left focus:outline-none focus-visible:border-gray-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-300 sm:text-sm text-gray-700 text-base flex items-center"
@@ -227,29 +229,7 @@ export default function Text_to_Voice() {
             </section>
           </div>
           {/* </section> */}
-          <section className="content bg-black text-white py-1.5u mr-0 xl:mt-0 mt-12">
-            <div className="content pl-0 flex flex-col md:flex-row space-y-4 space-x-0 md:space-y-0 md:space-x-4">
-              <button
-                className="flex items-center btn btn-white btn-xl btn-normal bg-accent-default text-black hover:bg-accent-dark"
-                type="button"
-              >
-                Get Started Free
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </section>
+          
           <div className="pb-24 pt-32 sm:pb-32 sm:pt-40 lg:pb-40 lg:pt-52 content">
             <div className="mx-auto max-w-7xl ">
               <div className="sm:text-left mb-12 md:mb-16 lg:mb-20">
@@ -1291,23 +1271,6 @@ export default function Text_to_Voice() {
                   </span>
                 </a>
               </article>
-            </div>
-          </div>
-          <div className="bg-black py-8 sm:py-12 md:py-16 content mr-0">
-            <div className="content pl-0">
-              <div className="sm:text-left">
-                <h3 className="font-sans text-4xl block font-semibold text-white mb-5">
-                  Ethical AI
-                </h3>
-                <span className="font-serif text-lg block font-normal text-gray-300">
-                  At Eleven, we believe that we should strive to make the most
-                  of new technologies, but not at all cost. As we develop them,
-                  we make every effort to implement appropriate safeguards which
-                  minimize the risk of harmful abuse. With this in mind, we’re
-                  fully committed both to respecting intellectual property
-                  rights and to actioning misuse.
-                </span>
-              </div>
             </div>
           </div>
         </div>

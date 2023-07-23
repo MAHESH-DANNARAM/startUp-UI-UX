@@ -1,0 +1,41 @@
+.word-container {
+    display: flex;
+  }
+  
+  .letter-container {
+    position: relative;
+    margin: 0 5px;
+  }
+  
+  .letter {
+    font-size: 40px;
+  }
+  
+  .animation {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .animate .animation {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

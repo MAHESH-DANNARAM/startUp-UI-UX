@@ -1,0 +1,8 @@
+/* For standard lists */
+ul, ol {
+    list-style: none; /* Hide the default marker for unordered (ul) and ordered (ol) lists */
+  }
+  
+  /* For list items */
+ 
+  
