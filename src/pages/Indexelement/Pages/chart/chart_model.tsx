@@ -2,21 +2,48 @@ import React, { useState, useEffect } from 'react';
 import Mermaid from './mermaid';
 
 interface AppProps {}
+const validChartTypes: string[] = [
+  "Sequence chart",
+  "Class chart",
+  "State chart",
+  "Gantt chart",
+  "Er chart",
+  "Flow chart",
+  "Pie chart",
+];
+
+interface ChartDataResponse {
+  result: string;
+}
 
 export default function Chart_model() {
 
 
   const [chartDefinition, setChartDefinition] = useState('');
   const [error, setError] = useState('');
+  const [prompt, setPrompt] = useState<string>("");
+  const [selectedChartType, setSelectedChartType] = useState<string>("");
 
   useEffect(() => {
     generateDiagram();
   }, []);
 
   const generateDiagram = () => {
+    if (!prompt.trim()) {
+      setError("Please enter a prompt before generating the chart.");
+      return;
+    }
+
+    if (!validChartTypes.includes(selectedChartType)) {
+      setError(
+        "Invalid chart type. Please choose one of the valid chart types."
+      );
+      return;
+    }
+
     const url = "http://127.0.0.1:5000/generate_pie_chart";
     const headers = { 'Content-Type': 'application/json' };
-    const instruction = 'Generate Mermaid Markdown text for Pie chart Title: Pets Adopted by Volunteers "Dogs": 386 "Cats": 85 "Rats": 15 "bot": 89';
+    const instruction = `Generate Mermaid Markdown text for ${selectedChartType} ${prompt}`;
     const data = { instruction };
 
     fetch(url, {
@@ -28,7 +55,7 @@ export default function Chart_model() {
       if (!response.ok) {
         throw new Error(`Error: ${response.status}`);
       }
-      return response.json();
+      return response.json() as Promise<ChartDataResponse>;
     })
     .then(data => {
       setChartDefinition(data.result);
@@ -40,8 +67,20 @@ export default function Chart_model() {
     });
   };
 
-  const handleChartChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleCharttypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setError("");
     setChartDefinition(event.target.value);
+    setSelectedChartType(event.target.value);
+  };
+  const handleChartChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setError("");
+    setChartDefinition(event.target.value);
+    setSelectedChartType(event.target.value);
+  };
+
+  const handleGenerateButtonClick = () => {
+    setError(""); // Clear the error message
+    generateDiagram();
   };
 
 
@@ -73,15 +112,17 @@ export default function Chart_model() {
                     id="prompt-text-input"
                     className="gr-block gr-box relative w-full border-solid !p-0 !m-0 !border-0 !shadow-none !overflow-visible !bg-transparent gr-padded"
                   >
-                    <label className="block w-full">
+                     <label className="block w-full">
                       <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
                         Enter your prompt
                       </span>
                       <input
                         data-testid="textbox"
                         type="text"
-                        className=" w-full h-9 border-t-white border-b-white"
+                        className="w-full h-9 border-t-white border-b-white border-l-0 border-r-0 focus:border-blue-300 focus:outline-none"
                         placeholder="Enter your prompt"
+                        value={prompt}
+                        onChange={(e) => setPrompt(e.target.value)}
                       />
                     </label>
                   </div>
@@ -89,16 +130,34 @@ export default function Chart_model() {
                     id="negative-prompt-text-input"
                     className="gr-block gr-box relative w-full overflow-hidden border-solid border border-l-white border-b-white !p-0 !m-0 !shadow-none !bg-transparent gr-padded"
                   >
-                    <label className="block w-full">
-                      <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
-                        Enter your negative prompt
-                      </span>
-                      <input
-                        data-testid="textbox"
-                        type="text"
-                        className="scroll-hide block gr-box gr-input w-full gr-text-input h-9"
-                        placeholder="Enter a negative prompt"
-                      />
+                     <label className="block w-full">
+                      {/* Dropdown menu to select the chart type */}
+                      <select
+                        id="chartTypeSelect"
+                        onChange={handleCharttypeChange}
+                        value={selectedChartType}
+                      >
+                        <option value="" disabled>
+                          Select Chart Type
+                        </option>
+                        {validChartTypes.map((chartType) => (
+                          <option key={chartType} value={chartType}>
+                            {chartType}
+                          </option>
+                        ))}
+                      </select>
+                      <div>
+                        {/* Display the generated chart or error message */}
+                        {chartDefinition ? (
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: chartDefinition,
+                            }}
+                          />
+                        ) : (
+                          <div>{error}</div>
+                        )}
+                      </div>
                     </label>
                   </div>
                 </div>
@@ -107,6 +166,7 @@ export default function Chart_model() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 mr-0 mb-4 mt-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 id="component-9"
+                onClick={handleGenerateButtonClick}
               >
                 Generate image
               </button>
@@ -131,9 +191,9 @@ export default function Chart_model() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="feather feather-image"
                     >
                       <rect
