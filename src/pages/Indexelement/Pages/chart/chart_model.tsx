@@ -17,15 +17,10 @@ interface ChartDataResponse {
 }
 
 export default function Chart_model() {
-<<<<<<< HEAD
 
-
-  const [chartDefinition, setChartDefinition] = useState('');
-  const [error, setError] = useState('');
-=======
   const [chartDefinition, setChartDefinition] = useState("");
   const [error, setError] = useState("");
->>>>>>> d3f8186d91fc868ac503711e92b8e07ca5b9c005
+
   const [prompt, setPrompt] = useState<string>("");
   const [selectedChartType, setSelectedChartType] = useState<string>("");
 
@@ -47,11 +42,8 @@ export default function Chart_model() {
     }
 
     const url = "http://127.0.0.1:5000/generate_pie_chart";
-<<<<<<< HEAD
-    const headers = { 'Content-Type': 'application/json' };
-=======
+
     const headers = { "Content-Type": "application/json" };
->>>>>>> d3f8186d91fc868ac503711e92b8e07ca5b9c005
     const instruction = `Generate Mermaid Markdown text for ${selectedChartType} ${prompt}`;
     const data = { instruction };
 
@@ -60,25 +52,6 @@ export default function Chart_model() {
       headers,
       body: JSON.stringify(data),
     })
-<<<<<<< HEAD
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-      return response.json() as Promise<ChartDataResponse>;
-    })
-    .then(data => {
-      setChartDefinition(data.result);
-      setError('');
-    })
-    .catch(error => {
-      setChartDefinition('');
-      setError(error.message || 'Something went wrong.');
-    });
-  };
-
-  const handleCharttypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-=======
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
@@ -98,7 +71,6 @@ export default function Chart_model() {
   const handleCharttypeChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
->>>>>>> d3f8186d91fc868ac503711e92b8e07ca5b9c005
     setError("");
     setChartDefinition(event.target.value);
     setSelectedChartType(event.target.value);
@@ -107,14 +79,6 @@ export default function Chart_model() {
     setError("");
     setChartDefinition(event.target.value);
     setSelectedChartType(event.target.value);
-<<<<<<< HEAD
-  };
-
-  const handleGenerateButtonClick = () => {
-    setError(""); // Clear the error message
-    generateDiagram();
-=======
->>>>>>> d3f8186d91fc868ac503711e92b8e07ca5b9c005
   };
 
   const handleGenerateButtonClick = () => {
@@ -168,11 +132,8 @@ export default function Chart_model() {
                     id="negative-prompt-text-input"
                     className="gr-block gr-box relative w-full overflow-hidden border-solid border border-l-white border-b-white !p-0 !m-0 !shadow-none !bg-transparent gr-padded"
                   >
-<<<<<<< HEAD
-                     <label className="block w-full">
-=======
                     <label className="block w-full">
->>>>>>> d3f8186d91fc868ac503711e92b8e07ca5b9c005
+
                       {/* Dropdown menu to select the chart type */}
                       <select
                         id="chartTypeSelect"
