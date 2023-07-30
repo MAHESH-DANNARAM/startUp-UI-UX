@@ -1,88 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Mermaid from "./mermaid";
+import React from "react";
 
-interface AppProps {}
-const validChartTypes: string[] = [
-  "Sequence chart",
-  "Class chart",
-  "State chart",
-  "Gantt chart",
-  "Er chart",
-  "Flow chart",
-  "Pie chart",
-];
-
-interface ChartDataResponse {
-  result: string;
-}
-
-export default function Chart_model() {
-  const [chartDefinition, setChartDefinition] = useState("");
-  const [error, setError] = useState("");
-  const [prompt, setPrompt] = useState<string>("");
-  const [selectedChartType, setSelectedChartType] = useState<string>("");
-
-  useEffect(() => {
-    generateDiagram();
-  }, []);
-
-  const generateDiagram = () => {
-    if (!prompt.trim()) {
-      setError("Please enter a prompt before generating the chart.");
-      return;
-    }
-
-    if (!validChartTypes.includes(selectedChartType)) {
-      setError(
-        "Invalid chart type. Please choose one of the valid chart types."
-      );
-      return;
-    }
-
-    const url = "http://127.0.0.1:5000/generate_pie_chart";
-    const headers = { "Content-Type": "application/json" };
-    const instruction = `Generate Mermaid Markdown text for ${selectedChartType} ${prompt}`;
-    const data = { instruction };
-
-    fetch(url, {
-      method: "POST",
-      headers,
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status}`);
-        }
-        return response.json() as Promise<ChartDataResponse>;
-      })
-      .then((data) => {
-        setChartDefinition(data.result);
-        setError("");
-      })
-      .catch((error) => {
-        setChartDefinition("");
-        setError(error.message || "Something went wrong.");
-      });
-  };
-
-  const handleCharttypeChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    setError("");
-    setChartDefinition(event.target.value);
-    setSelectedChartType(event.target.value);
-  };
-  const handleChartChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setError("");
-    setChartDefinition(event.target.value);
-    setSelectedChartType(event.target.value);
-  };
-
-  const handleGenerateButtonClick = () => {
-    setError(""); // Clear the error message
-    generateDiagram();
-  };
-
+export default function Model() {
   return (
     <>
       <div id="component-2" className="svelte-10ogue4 pl-96 pr-12 ">
@@ -104,7 +22,7 @@ export default function Chart_model() {
                 style={{ minWidth: "min(320px, 100%)", flexGrow: "1" }}
               >
                 <div
-                  className="gr-form overflow-hidden flex border-solid border border-t-white border-l-white  gap-px  flex-wrap"
+                  className="gr-form overflow-hidden flex border-solid border border-t-white border-l-white gap-px flex-wrap"
                   style={{ flexDirection: "inherit" }}
                 >
                   <div
@@ -118,10 +36,8 @@ export default function Chart_model() {
                       <input
                         data-testid="textbox"
                         type="text"
-                        className="w-full h-9 border-t-white border-b-white border-l-0 border-r-0 focus:border-blue-300 focus:outline-none"
+                        className="w-full h-9 border-t-white border-b-white prompt-input"
                         placeholder="Enter your prompt"
-                        value={prompt}
-                        onChange={(e) => setPrompt(e.target.value)}
                       />
                     </label>
                   </div>
@@ -130,33 +46,15 @@ export default function Chart_model() {
                     className="gr-block gr-box relative w-full overflow-hidden border-solid border border-l-white border-b-white !p-0 !m-0 !shadow-none !bg-transparent gr-padded"
                   >
                     <label className="block w-full">
-                      {/* Dropdown menu to select the chart type */}
-                      <select
-                        id="chartTypeSelect"
-                        onChange={handleCharttypeChange}
-                        value={selectedChartType}
-                      >
-                        <option value="" disabled>
-                          Select Chart Type
-                        </option>
-                        {validChartTypes.map((chartType) => (
-                          <option key={chartType} value={chartType}>
-                            {chartType}
-                          </option>
-                        ))}
-                      </select>
-                      <div>
-                        {/* Display the generated chart or error message */}
-                        {chartDefinition ? (
-                          <div
-                            dangerouslySetInnerHTML={{
-                              __html: chartDefinition,
-                            }}
-                          />
-                        ) : (
-                          <div>{error}</div>
-                        )}
-                      </div>
+                      <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
+                        Enter your negative prompt
+                      </span>
+                      <input
+                        data-testid="textbox"
+                        type="text"
+                        className="scroll-hide block gr-box gr-input w-full gr-text-input h-9 prompt-input"
+                        placeholder="Enter a negative prompt"
+                      />
                     </label>
                   </div>
                 </div>
@@ -165,9 +63,8 @@ export default function Chart_model() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 mr-0 mb-4 mt-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 id="component-9"
-                onClick={handleGenerateButtonClick}
               >
-                Generate image
+                Generate Music
               </button>
             </div>
           </div>
@@ -182,7 +79,7 @@ export default function Chart_model() {
                 style={{ position: "relative" }}
               >
                 <div className="h-full min-h-[28rem] flex justify-center items-center">
-                  {/* <div className="h-5 dark:text-white opacity-50">
+                  <div className="h-5 dark:text-white opacity-50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="100%"
@@ -206,30 +103,9 @@ export default function Chart_model() {
                       <circle cx="8.5" cy="8.5" r="1.5"></circle>
                       <polyline points="21 15 16 10 5 21"></polyline>
                     </svg>
-                  </div> */}
-                  <div className="w-[100%]">
-                    <h1>My Mermaid Diagram</h1>
-                    {chartDefinition ? (
-                      <>
-                        <div style={{ marginBottom: "16px" }}>
-                          <textarea
-                            rows={10}
-                            cols={80}
-                            value={chartDefinition}
-                            onChange={handleChartChange}
-                          />
-                        </div>
-                        <Mermaid chart={chartDefinition} />
-                      </>
-                    ) : (
-                      <div>
-                        <p>Generating the diagram...</p>
-                        {error && <div>Error: {error}</div>}
-                      </div>
-                    )}
                   </div>
                 </div>
-                {/* <iframe
+                <iframe
                   style={{
                     display: "block",
                     position: "absolute",
@@ -245,7 +121,7 @@ export default function Chart_model() {
                   }}
                   aria-hidden="true"
                   src="data:text/html,<script>onresize=function(){parent.postMessage(0,'*')}</script>"
-                ></iframe> */}
+                ></iframe>
               </div>
             </div>
           </div>
