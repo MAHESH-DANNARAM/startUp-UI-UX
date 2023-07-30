@@ -9,6 +9,8 @@ import Text_to_chart from '../../pages/Indexelement/Pages/chart/Text_to_chart';
 import Text_to_3d from '../../pages/Indexelement/Pages/3d_object/Text_to_3d';
 // import d3_model from "../../pages/Indexelement/Pages/3d_object/3d_model";
 import Ann from "../../pages/Indexelement/ann"
+import Chart from "../../pages/Indexelement/Pages/chart/chart";
+
 
 const Indexelement = () => {
     return(
@@ -21,6 +23,7 @@ const Indexelement = () => {
           <Route path="/chart" element={<Text_to_chart/>} />
           <Route path="/3d" element={<Text_to_3d/>} />
           <Route path="/a" element={<Ann/>} />
+          <Route path="/chart1" element={<Chart/>} />
 
 
 

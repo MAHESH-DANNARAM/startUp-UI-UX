@@ -1,6 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import Mermaid from './mermaid';
+
+interface AppProps {}
 
 export default function Chart_model() {
+
+
+  const [chartDefinition, setChartDefinition] = useState('');
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    generateDiagram();
+  }, []);
+
+  const generateDiagram = () => {
+    const url = "http://127.0.0.1:5000/generate_pie_chart";
+    const headers = { 'Content-Type': 'application/json' };
+    const instruction = 'Generate Mermaid Markdown text for Pie chart Title: Pets Adopted by Volunteers "Dogs": 386 "Cats": 85 "Rats": 15 "bot": 89';
+    const data = { instruction };
+
+    fetch(url, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(data),
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      setChartDefinition(data.result);
+      setError('');
+    })
+    .catch(error => {
+      setChartDefinition('');
+      setError(error.message || 'Something went wrong.');
+    });
+  };
+
+  const handleChartChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setChartDefinition(event.target.value);
+  };
+
+
   return (
     <>
       <div id="component-2" className="svelte-10ogue4 pl-96 pr-12 ">
@@ -79,7 +123,7 @@ export default function Chart_model() {
                 style={{ position: "relative" }}
               >
                 <div className="h-full min-h-[28rem] flex justify-center items-center">
-                  <div className="h-5 dark:text-white opacity-50">
+                  {/* <div className="h-5 dark:text-white opacity-50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="100%"
@@ -103,9 +147,30 @@ export default function Chart_model() {
                       <circle cx="8.5" cy="8.5" r="1.5"></circle>
                       <polyline points="21 15 16 10 5 21"></polyline>
                     </svg>
-                  </div>
+                  </div> */}
+                   <div className='w-[100%]'>
+      <h1>My Mermaid Diagram</h1>
+      {chartDefinition ? (
+        <>
+          <div style={{ marginBottom: '16px' }}>
+            <textarea
+              rows={10}
+              cols={80}
+              value={chartDefinition}
+              onChange={handleChartChange}
+            />
+          </div>
+          <Mermaid chart={chartDefinition} />
+        </>
+      ) : (
+        <div>
+          <p>Generating the diagram...</p>
+          {error && <div>Error: {error}</div>}
+        </div>
+      )}
+    </div>
                 </div>
-                <iframe
+                {/* <iframe
                   style={{
                     display: "block",
                     position: "absolute",
@@ -121,7 +186,7 @@ export default function Chart_model() {
                   }}
                   aria-hidden="true"
                   src="data:text/html,<script>onresize=function(){parent.postMessage(0,'*')}</script>"
-                ></iframe>
+                ></iframe> */}
               </div>
             </div>
           </div>
