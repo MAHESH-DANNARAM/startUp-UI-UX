@@ -17,8 +17,10 @@ interface ChartDataResponse {
 }
 
 export default function Chart_model() {
+
   const [chartDefinition, setChartDefinition] = useState("");
   const [error, setError] = useState("");
+
   const [prompt, setPrompt] = useState<string>("");
   const [selectedChartType, setSelectedChartType] = useState<string>("");
 
@@ -40,6 +42,7 @@ export default function Chart_model() {
     }
 
     const url = "http://127.0.0.1:5000/generate_pie_chart";
+
     const headers = { "Content-Type": "application/json" };
     const instruction = `Generate Mermaid Markdown text for ${selectedChartType} ${prompt}`;
     const data = { instruction };
@@ -111,7 +114,7 @@ export default function Chart_model() {
                     id="prompt-text-input"
                     className="gr-block gr-box relative w-full border-solid !p-0 !m-0 !border-0 !shadow-none !overflow-visible !bg-transparent gr-padded"
                   >
-                    <label className="block w-full">
+                     <label className="block w-full">
                       <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
                         Enter your prompt
                       </span>
@@ -130,6 +133,7 @@ export default function Chart_model() {
                     className="gr-block gr-box relative w-full overflow-hidden border-solid border border-l-white border-b-white !p-0 !m-0 !shadow-none !bg-transparent gr-padded"
                   >
                     <label className="block w-full">
+
                       {/* Dropdown menu to select the chart type */}
                       <select
                         id="chartTypeSelect"
