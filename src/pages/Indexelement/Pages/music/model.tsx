@@ -1,6 +1,29 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
 export default function Model() {
+  const [prompts, setPrompts] = useState("");
+  const [duration, setDuration] = useState("");
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/api/music_gen/generate_music",
+        {
+          prompts: prompts.split("\n"),
+          duration: parseInt(duration),
+        }
+      );
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "generated_audio.wav");
+      document.body.appendChild(link);
+      link.click();
+    } catch (error) {
+      console.error("Error:", (error as any).response?.data || error);
+    }
+  };
   return (
     <>
       <div id="component-2" className="svelte-10ogue4 pl-96 pr-12 ">
@@ -12,6 +35,7 @@ export default function Model() {
             id="component-3"
             className="gr-block gr-box relative w-full overflow-hidden border rounded-lg gr-padded"
           >
+            <form onSubmit={handleSubmit}>
             <div
               className="flex row w-full flex-wrap gap-4 gr-compact items-stretch"
               id="prompt-container"
@@ -29,15 +53,19 @@ export default function Model() {
                     id="prompt-text-input"
                     className="gr-block gr-box relative w-full border-solid !p-0 !m-0 !border-0 !shadow-none !overflow-visible !bg-transparent gr-padded"
                   >
-                    <label className="block w-full">
+                    <label className="block w-full" htmlFor="prompts">
                       <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
-                        Enter your prompt
+                      Enter your prompts (one per line):
                       </span>
                       <input
                         data-testid="textbox"
                         type="text"
                         className="w-full h-9 border-t-white border-b-white prompt-input"
                         placeholder="Enter your prompt"
+                        id="prompts"
+                        value={prompts}
+                        onChange={(e) => setPrompts(e.target.value)}
+                        required
                       />
                     </label>
                   </div>
@@ -45,28 +73,33 @@ export default function Model() {
                     id="negative-prompt-text-input"
                     className="gr-block gr-box relative w-full overflow-hidden border-solid border border-l-white border-b-white !p-0 !m-0 !shadow-none !bg-transparent gr-padded"
                   >
-                    <label className="block w-full">
+                    <label className="block w-full" htmlFor="duration">
                       <span className="text-gray-500 text-[0.855rem] mb-2 block relative z-40 sr-only h-0 !m-0">
-                        Enter your negative prompt
+                      Duration (seconds):
                       </span>
                       <input
                         data-testid="textbox"
-                        type="text"
                         className="scroll-hide block gr-box gr-input w-full gr-text-input h-9 prompt-input"
                         placeholder="Enter a negative prompt"
+                        type="number"
+                        id="duration"
+                        value={duration}
+                        onChange={(e) => setDuration(e.target.value)}
+                        required
                       />
                     </label>
                   </div>
                 </div>
               </div>
               <button
-                type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 mr-0 mb-4 mt-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 id="component-9"
+                type="submit"
               >
                 Generate Music
               </button>
             </div>
+            </form>
           </div>
           <div className="">
             <div
