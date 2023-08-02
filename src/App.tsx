@@ -1,22 +1,17 @@
-import { Routes, Route, } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import Loader from "./components/Loaders/Loader";
-import Login from "./pages/home/Login";
+import Loader from "@/common/components/loader/Loader";
 
-function App() {
-  const Home = lazy(() => import("./routes/Homeroutes/HomeRoutes"));
-  const Products = lazy(() => import("./routes/Homeroutes/Products"));
-  const Image = lazy(() => import("./pages/Indexelement/Pages/image/Text_to_Image") )
-
+const App = () => {
+  const ProductsRoute = lazy(() => import("@/routes/ProductsRoute"));
+  const FrontendRoute = lazy(() => import("@/routes/FrontendRoute"));
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<Loader/>}>
       <Routes>
-        <Route path="/*" element={<Home />} />
-        <Route path="products/*" element={<Products />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/image" element={<Image />} />
+        <Route path="/*" element={<FrontendRoute />} />
+        <Route path="products/*" element={<ProductsRoute />} />
       </Routes>
     </Suspense>
   );
-}
+};
 export default App;

@@ -1,0 +1,934 @@
+/* ---------- Global Style ---------- */
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProLight.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProLightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProRegular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProItalic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProBold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/FFScalaSansProBlack.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Medium";
+  src: url("../fonts/FranklinGothicMediumCondRegular.ttf");
+}
+
+:root {
+  /* --primary-color: #5346B7; */
+  /* --secondary-color: #4C9A63; */
+  /* --primary-dark-color: #3C3278; */
+  --primary-color: #d86d6d;
+  --secondary-color: #454b54;
+  --primary-dark-color: #ce5a5a;
+  --secondary-dark-color: #3d4148;
+  --text-color: #636b88;
+  /* --gradient-color: linear-gradient(to right, #408555, #3BAD5E); */
+  /* --gradient-color-2: linear-gradient(to right, #3D3278, #5346B7); */
+  --gradient-color: linear-gradient(to right, #c55b5b, #ce6969);
+  --gradient-color-2: linear-gradient(to right, #4b525d, #626d7f);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Scala Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 0;
+}
+
+.btn-primary {
+  background: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark-color) !important;
+}
+
+.btn-secondary {
+  background: var(--secondary-color) !important;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-dark-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-fg {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-outline-light {
+  border: 1px solid #fff;
+  transition: all 0.3s ease !important;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.bg-primary-gradient {
+  background: var(--gradient-color);
+}
+
+.bg-primary-gradient-2 {
+  background: var(--gradient-color-2);
+}
+
+.pagination .page-item {
+  margin: 0;
+}
+
+.pagination
+  :is(.page-link, .page-link:visited, .page-link:focus, .page-link:active) {
+  color: var(--secondary-color) !important;
+  font-weight: 400 !important;
+  background: #fff;
+  border: 0;
+  padding: 0.6rem 1.4rem;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.pagination :is(.page-link:hover, .page-item.active .page-link) {
+  color: #fff !important;
+  border: 0 !important;
+  background: var(--primary-color) !important;
+}
+
+/* -------- Global Style End -------- */
+
+/* ---------- Preload Style --------- */
+.preloader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  z-index: 999;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- Preload Style End ------- */
+
+/* ---------- Header Style ---------- */
+header {
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo svg {
+  width: 223px;
+  height: 52px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2.6rem;
+  color: var(--secondary-dark-color) !important;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu .mob-menu-logo {
+  display: none;
+}
+
+.main-menu ul {
+  margin-right: auto;
+  margin-right: 0.6rem;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  margin-right: 1.4rem;
+}
+
+.main-menu ul a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+}
+
+.main-menu .btn {
+  font-weight: 500;
+  padding: 0.6rem 1.6rem;
+}
+
+.main-menu .dropdown-item {
+  color: #333;
+}
+
+.main-menu .dropdown-menu li {
+  margin: 0;
+  display: block;
+}
+
+.main-menu .dropdown-menu a {
+  padding: 1.2rem 0.9rem;
+  display: block;
+}
+
+.main-menu .dropdown-menu :is(a:hover, a:focus, a:active) {
+  color: #fff !important;
+  background: var(--secondary-color) !important;
+}
+
+/* -------- Header Style End -------- */
+
+/* ---------- Banner Style ---------- */
+.banner {
+  position: relative;
+  background: var(--gradient-color);
+  overflow: hidden;
+}
+
+.banner .left {
+  display: flex;
+  color: #fff;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner .title {
+  font-size: 3.8rem;
+  line-height: 60px;
+  margin-bottom: 1rem;
+}
+
+.banner .title span {
+  font-size: 5rem;
+}
+
+.banner .desc {
+  font-size: 1.2rem;
+}
+
+.banner .right .bg-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.banner .right .vector-1 {
+  position: absolute;
+  left: 43%;
+  bottom: -10%;
+  width: 10rem;
+  z-index: 10;
+}
+
+.banner .right .vector-2 {
+  position: absolute;
+  left: 56%;
+  bottom: 18%;
+  width: 5rem;
+  z-index: 10;
+}
+
+/* -------- Banner Style End -------- */
+
+/* --------- Section 2 Style -------- */
+.section-2 .left img {
+  display: block;
+  max-width: 480px;
+  border-radius: 1.2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.section-2 .right {
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.section-2 .right .title {
+  font-size: 2.6rem;
+  max-width: 400px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  color: var(--primary-color);
+}
+
+/* ------- Section 2 Style End ------ */
+
+/* --------- Section 3 Style -------- */
+.section-3 {
+  background: var(--gradient-color-2);
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.section-3 :is(.title, .desc) {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+
+.section-3 .desc {
+  font-weight: 300;
+}
+
+.section-3 .bg-overlay {
+  position: absolute;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+}
+
+.section-3 .bg-overlay-2 {
+  position: absolute;
+  height: 70%;
+  right: -2%;
+  top: 0;
+}
+
+.section-3 .card {
+  padding: 1.6rem 0.6rem;
+  border-radius: 1.4rem;
+}
+
+.section-3 .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  color: var(--secondary-color);
+}
+
+.section-3 .card-top .title {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.section-3 .card-top svg {
+  width: 60px;
+  height: 60px;
+  margin-left: 0.4rem;
+}
+
+.section-3 .card-body {
+  color: var(--text-color);
+}
+
+/* 
+@media(min-width: 1400px) {
+    .section-3 .card-top {
+        gap: 4.8rem;
+    }
+
+    .section-3 .card-top svg {
+        width: 70px;
+        height: 70px;
+        margin-left: .4rem;
+    }
+} */
+
+/* ------- Section 3 Style End ------ */
+
+/* --------- Testimony Style -------- */
+.testimony {
+  position: relative;
+}
+
+.testimony .card {
+  background: var(--primary-color);
+  color: #fff;
+  max-width: 760px;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+  text-align: center;
+}
+
+.testimony .card img {
+  max-width: 450px;
+}
+
+.testimony .quote {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.testimony .quote i:first-child {
+  transform: translate(-12px, -12px);
+  font-size: 1.5rem;
+}
+
+.testimony .quote i:last-child {
+  transform: translate(20px, 12px);
+  font-size: 1.5rem;
+}
+
+.testimony .quote-type {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.testimony .swiper-slide {
+  padding: 3rem;
+  cursor: pointer;
+}
+
+.testimony .swiper-pagination-bullet {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.testimony .swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+}
+
+/* ------- Testimony Style End ------ */
+
+/* ---------- Footer Style ---------- */
+footer {
+  padding: 2rem 6rem;
+  font-size: 1rem;
+  text-align: right;
+  color: var(--text-color);
+}
+
+footer .title {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+footer img {
+  max-width: 260px;
+  text-align: left;
+}
+
+/* -------- Footer Style End -------- */
+
+/************* Random Padding ***************/
+
+.pl {
+  padding-left:15px;
+}
+
+
+
+/* -------- Login Style -------- */
+.login {
+  padding: 3rem 24rem 2rem;
+  text-align: center;
+}
+
+.login .logo {
+  width: 200px;
+  margin-bottom: 1.2rem;
+}
+
+.login .card {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.4rem;
+}
+
+.login .card-title {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.login .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.login .card-footer {
+  background: transparent;
+}
+
+.login .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--secondary-dark-color);
+}
+
+.login label {
+  color: var(--secondary-dark-color);
+  font-size: 0.95rem;
+}
+
+.login form .btn {
+  padding: 0.6rem 0;
+}
+
+.login .social-login-btn {
+  position: relative;
+  background: transparent;
+  margin-top: 1rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.login .social-login-btn:hover {
+  background: #555;
+  color: #fff;
+}
+
+.login .social-login-btn svg {
+  position: absolute;
+  left: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.login .social-login-btn:hover svg {
+  fill: #fff;
+}
+
+/* ------ Login Style End ------ */
+
+/* ----- Technical Signup Style ----- */
+.layout-2 {
+  position: relative;
+}
+
+.layout-2 .title {
+  line-height: 4.4rem;
+  font-size: 3.6rem;
+}
+
+.layout-2 .title span {
+  font-size: 4rem !important;
+}
+
+.layout-2 .img-box {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  max-width: 45%;
+  margin: 0;
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.layout-2 .img-box img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tsign .section-2 .card {
+  padding: 2rem 1.2rem 1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  background: transparent;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tsign .section-2 .card:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.tsign .section-2 .card .title {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.tsign form {
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.tsign label span {
+  color: var(--primary-dark-color);
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.tsign .form-section {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+}
+
+.tsign .form-control,
+.tsign .form-control:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0.6rem 1rem;
+  background: #e1e1e1;
+  border: 2px solid transparent;
+}
+
+.tsign .form-control:focus {
+  border: 2px solid var(--secondary-color);
+}
+
+/* --- Technical Signup Style End --- */
+
+/* --------- Find Work Style -------- */
+.find-work {
+  color: var(--text-color);
+}
+
+.find-work .banner {
+  height: 50vh;
+}
+
+.find-work .banner .left {
+  min-height: 100%;
+  height: 100%;
+}
+
+.find-work .img-box {
+  max-width: 100%;
+  width: 40vw;
+}
+
+.find-work .success .sub-heading {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.find-work .success .title {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3.6rem !important;
+}
+
+.find-work .success .desc {
+  text-align: center;
+  font-size: 1.3rem !important;
+}
+
+.find-work .card {
+  height: 100%;
+}
+
+.find-work .card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.find-work .title {
+  font-size: 3.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* ------- Find Work Style End ------ */
+
+/* -------- Responsive Style -------- */
+@media (max-width: 991px) {
+  .banner .left {
+    padding: 2rem 1.6rem 0;
+    min-height: 60vh;
+    justify-content: flex-start;
+  }
+
+  .banner .right .bg-img {
+    top: 70%;
+    width: 120%;
+    max-height: 10rem;
+    object-fit: cover;
+  }
+
+  .banner .right .vector-2 {
+    position: absolute;
+    left: 85%;
+    bottom: 16%;
+    width: 5rem;
+    z-index: 10;
+  }
+
+  .banner .right .vector-1 {
+    position: absolute;
+    left: 0%;
+    transform: rotate(180deg);
+    bottom: 0;
+    width: 4rem;
+    z-index: 10;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 60vw;
+    left: 0;
+    background: var(--primary-color);
+    z-index: 999;
+    min-height: 100vh;
+    padding: 2rem 1.6rem;
+    transform: translateX(-100%);
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px transparent;
+  }
+
+  .main-menu.active {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    transform: translateX(0);
+  }
+
+  .main-menu .mob-menu-logo {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 1.4rem;
+  }
+
+  .main-menu ul li {
+    display: block;
+    color: #fff;
+    margin: 1rem 0;
+  }
+
+  .main-menu li a,
+  .main-menu li a:hover {
+    color: #fff;
+  }
+
+  .main-menu .btn {
+    background-color: transparent !important;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .main-menu .btn:hover {
+    background-color: #fff !important;
+    color: #000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .banner .title {
+    font-size: 3.4rem;
+  }
+
+  .banner .title span {
+    font-size: 4rem;
+  }
+
+  .section-3 .bg-overlay-2 {
+    position: absolute;
+    height: 46%;
+    right: -8%;
+    top: 0;
+  }
+
+  .section-3 .bg-overlay {
+    height: 50% !important;
+  }
+
+  .section-2 .right {
+    padding: 2rem;
+  }
+
+  .testimony .card img {
+    max-width: 100%;
+  }
+
+  .testimony .swiper-slide {
+    padding: 3rem 0;
+  }
+
+  .section-2 .left img {
+    max-width: 100%;
+  }
+
+  .section-3 .card {
+    margin: 1.2rem 0;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  footer img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  footer .title {
+    margin: 1rem 0;
+  }
+
+  .login {
+    padding: 4rem 0;
+  }
+
+  .login .navigation {
+    flex-wrap: wrap;
+    row-gap: 3px !important;
+  }
+
+  .tsign .img-box {
+    display: none;
+  }
+
+  .tsign .banner .left {
+    min-height: 0;
+    padding: 2rem 1rem;
+  }
+
+  .layout-2 .img-box {
+    display: none;
+  }
+
+  .find-work .banner {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  html {
+    font-size: 125%;
+  }
+
+  body,
+  a,
+  .btn,
+  p,
+  label,
+  input,
+  input::placeholder {
+    font-size: 105% !important;
+  }
+
+  .banner .title {
+    line-height: 4.8rem;
+  }
+
+  .banner .desc {
+    font-size: 1.4rem !important;
+  }
+
+  .banner .title span {
+    font-size: 5.4rem;
+  }
+
+  .banner .right .vector-1 {
+    left: 47%;
+    bottom: -8%;
+  }
+
+  .section-2 .right .title {
+    max-width: 600px;
+  }
+
+  .section-3 :is(.title, .desc) {
+    max-width: 700px;
+  }
+
+  .section-3 .card-top {
+    gap: 3.4rem;
+  }
+
+  .testimony {
+    padding-top: 0;
+  }
+
+  .testimony .card {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  .tsign .banner .title {
+    line-height: 4rem;
+  }
+
+  .tsign .banner .title span {
+    font-size: 4.8rem !important;
+  }
+
+  .login .logo {
+    width: 280px;
+  }
+}
+
+/* ------ Responsive Style End ------ */

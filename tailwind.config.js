@@ -1,102 +1,59 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
+      fontSize: {
+        15: ['15px', { lineHeight: '32px' }]
+      },
+      screens: {
+        'sm': '576px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1200px',
+        '2xl': '1400px',
+      },
+      width: {
+        6.5: '22px'
+      },
+      height: {
+        6.5: '22px'
+      },
+      outlineWidth: {
+        1.5: '1.5px'
+      },
       colors: {
-        whitesmoke: "#f5f5f7",
-        "soft-blue": "#5468e7",
-        "dark-blue": "#232340",
-        "desaturated-blue": "#7676b2",
-        gray: {
-          "100": "#8b8c91",
-          "200": "#22262f",
-          // "100": "#fafafa",
-          // "200": "rgba(20, 21, 34, 0.04)",
-          "300": "rgba(255, 255, 255, 0.08)",
-          "400": "rgba(35, 35, 64, 0.9)",
+        main: {
+          100: '#EBEBEB',
+          200: '#EAEAEA',
+          300: '#94A1A0',
+          400: '#7F8C8D',
+          500: '#455358',
+          DEFAULT: '#38454A',
+          600: '#3F474F',
+          700: '#1e2122'
         },
-        "off-white": "#f5f5f5",
-        "primary-0": "#fff",
-        "secondary-500": "#141522",
-        "primary-500": "#546fff",
-        royalblue: "rgba(84, 104, 231, 0.5)",
-        "secondary-400": "#54577a",
-        darkslategray: {
-          "100": "#2e323c",
-          "200": "rgba(46, 50, 60, 0.6)",
+        alt: {
+          dark: '#0868b1',
+          DEFAULT: '#0984E3'
         },
-        sandybrown: "#f3bc72",
-      },
-      fontFamily: {
-        "caption-desktop": "'Lexend Deca'",
-        "plus-jakarta-sans": "'Plus Jakarta Sans'",
-        poppins: "Poppins",
-        raleway: "Raleway",
-        inter: "Inter",
-        rubik: "Rubik",
-      },
-      borderRadius: {
-        "3xs": "10px",
-        "4xs-3": "8.3px",
-        "15xl": "34px",
-        "5xl-7": "24.7px",
-        "12xs-8": "0.8px",
-        "42xl-8": "61.8px",
-        "146xl-8": "165.8px",
-        "44xl": "63px",
-        "10xl-1": "29.1px",
-        "6xs-4": "6.4px",
-        "108xl-7": "127.7px",
-        "7xs-1": "5.1px",
-        "xs-7": "11.7px",
-        "mini-7": "14.7px",
-        "12xs-6": "0.6px",
-        "11xs-3": "1.3px",
-        "44xl-9": "63.9px",
-        "9xs-7": "3.7px",
-        "55xl-5": "74.5px",
-        "10xs": "3px",
-      },
-    },
-    fontSize: {
-      sm: "0.88rem",
-      "5xl": "1.5rem",
-      "33xl": "3.25rem",
-      "31xl": "3.13rem",
-      "smi-4": "0.78rem",
-      "lgi-8": "1.24rem",
-      "10xl-7": "1.86rem",
-      "mini-8": "0.93rem",
-      "base-5": "1.03rem",
-      "13xl-1": "2.01rem",
-      "mini-6": "0.91rem",
-      "mid-5": "1.09rem",
-      "10xl-1": "1.82rem",
-      lg: "1.13rem",
-      base: "1rem",
-      "xs-6": "0.73rem",
-      "3xs": "0.63rem",
-      "sm-3": "0.83rem",
-      "4xs-9": "0.56rem",
-      "2xs-2": "0.64rem",
-      "5xs-7": "0.48rem",
-      "base-3": "0.96rem",
-      "smi-8": "0.8rem",
-      "xs-5": "0.72rem",
-      "xl-4": "1.27rem",
-      "21xl-9": "2.56rem",
-      "11xl-7": "1.92rem",
-      "7xs-2": "0.33rem",
-      "7xs": "0.38rem",
-      "8xs-5": "0.28rem",
-      xl: "1.25rem",
-      "base-3": "1.02rem",
-      "smi-5": "0.78rem",
-      "6xl": "1.56rem",
+        altTwo: {
+          dark: '#9f5252',
+          DEFAULT: '#C66565'
+        },
+        altThree: {
+          light: '#9BEAD4',
+          dark: '#002C23'
+        },
+        altFour: {
+          dark: '#d0d4d5',
+          DEFAULT: '#ECF0F1'
+        }
+      }
     },
   },
-  corePlugins: {
-    preflight: false,
-  },
-};
+  plugins: [],
+}
