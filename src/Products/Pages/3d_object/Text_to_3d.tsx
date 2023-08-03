@@ -12,7 +12,7 @@ export default function Text_to_3d() {
   };
   return (
     <>
-      <div className="pt-[5rem] pl-[88%]">
+      <div className="pt-[5rem] pl-[85%]">
         <button
           type="button"
           value="form1"
@@ -21,7 +21,7 @@ export default function Text_to_3d() {
           onClick={() => showForm("form1" as unknown as number)}
           id="flexRadioDefault1"
         >
-          Gnerate Image
+          Gnerate 3D Object
         </button>
       </div>
       {selectedForm === ("form1" as unknown) && <D3_model />}

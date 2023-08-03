@@ -171,7 +171,7 @@ export default function Chart_model() {
                 id="component-9"
                 onClick={handleGenerateButtonClick}
               >
-                Generate image
+                Gnerate Chart
               </button>
             </div>
           </div>

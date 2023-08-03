@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import Model from "./model";
+
 export default function Text_to_Image() {
   const [selectedForm, setSelectedForm] = useState<number | null>(null);
 
@@ -29,10 +30,11 @@ export default function Text_to_Image() {
         <div className="grid gap-4"></div>
 
         <div className="grid gap-4">
+
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture1.png"
+              src="/src/components/frontend/assets/imgs/Picture1.png"
               alt=""
             />
             <div>
@@ -45,7 +47,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture2.png"
+              src="/src/components/frontend/assets/imgs/Picture2.png"
               alt=""
             />
             <span>
@@ -56,7 +58,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture3.png"
+              src="/src/components/frontend/assets/imgs/Picture3.png"
               alt=""
             />
             <span>
@@ -64,12 +66,13 @@ export default function Text_to_Image() {
               reality and evoke emotions through abstract symbolism
             </span>
           </div>
+          
         </div>
         <div className="grid gap-4">
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture4.png"
+              src="/src/components/frontend/assets/imgs/Picture4.png"
               alt=""
             />
             <span>
@@ -81,7 +84,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture5.png"
+              src="/src/components/frontend/assets/imgs/Picture5.png"
               alt=""
             />
             <span>
@@ -93,7 +96,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture6.png"
+              src="/src/components/frontend/assets/imgs/Picture6.png"
               alt=""
             />
             <span>Cyberpunk style city street at night, Expressionism</span>
@@ -103,7 +106,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture7.png"
+              src="/src/components/frontend/assets/imgs/Picture7.png"
               alt=""
             />
             <span>Portrait of a Sci-Fi man, peaceful, digital art</span>
@@ -111,7 +114,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture8.png"
+              src="/src/components/frontend/assets/imgs/Picture8.png"
               alt=""
             />
             <span>
@@ -122,7 +125,7 @@ export default function Text_to_Image() {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="../imgs/Picture9.png"
+              src="/src/components/frontend/assets/imgs/Picture9.png"
               alt=""
             />
             <span>

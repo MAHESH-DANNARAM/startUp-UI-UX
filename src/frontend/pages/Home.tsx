@@ -1,30 +1,5 @@
 import "@/components/frontend/assets/css/creative-studio.css";
 import "@/components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
-
-import Logo from "@/components/frontend/assets/imgs/logo.png";
-
-import About from "@/components/frontend/assets/imgs/about.jpg";
-
-import Img1 from "@/components/frontend/assets/imgs/folio-1.jpg";
-import Img2 from "@/components/frontend/assets/imgs/folio-2.jpg";
-import Img3 from "@/components/frontend/assets/imgs/folio-3.jpg";
-import Img4 from "@/components/frontend/assets/imgs/folio-4.jpg";
-import Img5 from "@/components/frontend/assets/imgs/folio-5.jpg";
-import Img6 from "@/components/frontend/assets/imgs/folio-6.jpg";
-
-import Avatar1 from "@/components/frontend/assets/imgs/avatar.jpg";
-import Avatar2 from "@/components/frontend/assets/imgs/avatar-1.jpg";
-import Avatar3 from "@/components/frontend/assets/imgs/avatar-2.jpg";
-import Avatar4 from "@/components/frontend/assets/imgs/avatar-3.jpg";
-import Avatar5 from "@/components/frontend/assets/imgs/avatar-4.jpg";
-import Avatar6 from "@/components/frontend/assets/imgs/avatar-5.jpg";
-import Avatar7 from "@/components/frontend/assets/imgs/avatar-6.jpg";
-import Avatar8 from "@/components/frontend/assets/imgs/avatar-7.jpg";
-
-import Blog1 from "@/components/frontend/assets/imgs/blog-1.jpg";
-import Blog2 from "@/components/frontend/assets/imgs/blog-2.jpg";
-import Blog3 from "@/components/frontend/assets/imgs/blog-3.jpg";
-
 export default function Home() {
   return (
     <>
@@ -37,7 +12,7 @@ export default function Home() {
           <div className="container">
             <a className="navbar-brand" href="#">
               <img
-                src={Logo}
+                src="/src/components/frontend/assets/imgs/logo.png"
                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
               />
             </a>
@@ -188,7 +163,7 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-md-5 col-lg-4">
                 <img
-                  src={About}
+                  src="/src/components/frontend/assets/imgs/about.jpg"
                   alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   className="w-100 img-thumbnail mb-3"
                 />
@@ -385,7 +360,7 @@ export default function Home() {
               <div className="col-sm-4">
                 <div className="img-wrapper">
                   <img
-                    src={Img1}
+                    src="/src/components/frontend/assets/imgs/folio-1.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="overlay">
@@ -402,43 +377,7 @@ export default function Home() {
                 </div>
                 <div className="img-wrapper">
                   <img
-                    src={Img2}
-                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
-                  />
-                  <div className="overlay">
-                    <div className="overlay-infos">
-                      <h5>Project Title</h5>
-                      <a href="javascript:void(0)">
-                        <i className="ti-zoom-in"></i>
-                      </a>
-                      <a href="javascript:void(0)">
-                        <i className="ti-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="img-wrapper">
-                  <img
-                    src={Img3}
-                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
-                  />
-                  <div className="overlay">
-                    <div className="overlay-infos">
-                      <h5>Project Title</h5>
-                      <a href="javascript:void(0)">
-                        <i className="ti-zoom-in"></i>
-                      </a>
-                      <a href="javascript:void(0)">
-                        <i className="ti-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="img-wrapper">
-                  <img
-                    src={Img4}
+                    src="/src/components/frontend/assets/imgs/folio-2.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="overlay">
@@ -457,7 +396,7 @@ export default function Home() {
               <div className="col-sm-4">
                 <div className="img-wrapper">
                   <img
-                    src={Img5}
+                    src="/src/components/frontend/assets/imgs/folio-3.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="overlay">
@@ -474,7 +413,43 @@ export default function Home() {
                 </div>
                 <div className="img-wrapper">
                   <img
-                    src={Img6}
+                    src="/src/components/frontend/assets/imgs/folio-4.jpg"
+                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
+                  />
+                  <div className="overlay">
+                    <div className="overlay-infos">
+                      <h5>Project Title</h5>
+                      <a href="javascript:void(0)">
+                        <i className="ti-zoom-in"></i>
+                      </a>
+                      <a href="javascript:void(0)">
+                        <i className="ti-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="img-wrapper">
+                  <img
+                    src="/src/components/frontend/assets/imgs/folio-5.jpg"
+                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
+                  />
+                  <div className="overlay">
+                    <div className="overlay-infos">
+                      <h5>Project Title</h5>
+                      <a href="javascript:void(0)">
+                        <i className="ti-zoom-in"></i>
+                      </a>
+                      <a href="javascript:void(0)">
+                        <i className="ti-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-wrapper">
+                  <img
+                    src="/src/components/frontend/assets/imgs/folio-6.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="overlay">
@@ -501,7 +476,7 @@ export default function Home() {
             <div className="row">
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar1} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar.jpg" />
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       FOUNDER & CEO
@@ -530,7 +505,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar6} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-5.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DIRECTOR & CEO
@@ -559,7 +534,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar2} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-2.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       SOFTWARE TESTER
@@ -588,7 +563,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar7} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-6.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -617,7 +592,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar3} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-2.jpg" />
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -646,7 +621,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar2} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-1.jpg" />
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -675,7 +650,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar5} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-4.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -704,7 +679,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar5} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-4.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -733,7 +708,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar7} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-6.jpg" />
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -762,7 +737,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar8} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-7.jpg"/>
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       DEVELOPER
@@ -791,7 +766,7 @@ export default function Home() {
               </div>
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
-                  <img className="card-img-top inset" src={Avatar5} />
+                  <img className="card-img-top inset" src="/src/components/frontend/assets/imgs/avatar-4.jpg" />
                   <div className="card-body">
                     <h6 className="small text-primary font-weight-bold">
                       SERVER MANAGER
@@ -862,7 +837,7 @@ export default function Home() {
                 <div className="testimonial-wrapper">
                   <div className="img-holder">
                     <img
-                      src={Avatar4}
+                      src="/src/components/frontend/assets/imgs/avatar-3.jpg"
                       alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                     />
                   </div>
@@ -880,7 +855,7 @@ export default function Home() {
                 <div className="testimonial-wrapper">
                   <div className="img-holder">
                     <img
-                      src={Avatar4}
+                      src="/src/components/frontend/assets/imgs/avatar.jpg"
                       alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                     />
                   </div>
@@ -944,7 +919,7 @@ export default function Home() {
               <div className="col-md-4">
                 <div className="card blog-post my-4 my-sm-5 my-md-0">
                   <img
-                    src={Blog1}
+                    src="/src/components/frontend/assets/imgs/blog-1.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="card-body">
@@ -971,7 +946,7 @@ export default function Home() {
               <div className="col-md-4">
                 <div className="card blog-post my-4 my-sm-5 my-md-0">
                   <img
-                    src={Blog2}
+                    src="/src/components/frontend/assets/imgs/blog-2.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="card-body">
@@ -998,7 +973,7 @@ export default function Home() {
               <div className="col-md-4">
                 <div className="card blog-post my-4 my-sm-5 my-md-0">
                   <img
-                    src={Blog3}
+                    src="/src/components/frontend/assets/imgs/blog-3.jpg"
                     alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                   />
                   <div className="card-body">
@@ -1116,7 +1091,7 @@ export default function Home() {
                   <li className="list-body">
                     <a href="#" className="logo">
                       <img
-                        src={Logo}
+                        src="/src/components/frontend/assets/imgs/logo.png"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page"
                       />
                       <h6>Creative Studio</h6>

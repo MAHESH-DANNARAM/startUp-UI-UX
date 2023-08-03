@@ -21,7 +21,7 @@ export default function Text_to_chart() {
           onClick={() => showForm("form1" as unknown as number)}
           id="flexRadioDefault1"
         >
-          Gnerate Image
+          Gnerate Chart
         </button>
       </div>
       {selectedForm === ("form1" as unknown) && <Chart_model />}

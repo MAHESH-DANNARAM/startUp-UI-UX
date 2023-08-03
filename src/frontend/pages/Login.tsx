@@ -6,8 +6,14 @@ interface CredentialResponse {
 }
 
 declare global {
-  // ... (declare global interface for 'google' object)
+  interface Window {
+    google: any; // You might want to provide a more specific type if available
+  }
 }
+
+
+  // ... (declare global interface for 'google' object)
+
 
 export default function Login() {
   const [user, setUser] = useState<any>({});
@@ -25,11 +31,9 @@ export default function Login() {
 
   function handleSignOut() {
     setUser({});
-    const signInDiv = document.getElementById('signInDev');
-    if (signInDiv) {
-      signInDiv.hidden = false; // Set the sign-in button visible when signed out
-    }
-  }
+}
+
+
 
  // Inside the useEffect hook:
 useEffect(() => {
@@ -37,7 +41,7 @@ useEffect(() => {
   if (signInDiv) {
     window.google.accounts.id.initialize({
       client_id: "813086924082-bd35hok6mtna6m71iid5f22g2glm8gdq.apps.googleusercontent.com",
-      callback: (data) => handleCallbackResponse(data),
+      callback: (data: CredentialResponse) => handleCallbackResponse(data),
       state_cookie_domain: "https://example.com",
     });
     window.google.accounts.id.renderButton(signInDiv, {
