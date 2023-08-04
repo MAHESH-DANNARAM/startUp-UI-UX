@@ -9,6 +9,7 @@ export default {
       fontSize: {
         15: ['15px', { lineHeight: '32px' }]
       },
+      
       screens: {
         'sm': '576px',
         'md': '768px',
