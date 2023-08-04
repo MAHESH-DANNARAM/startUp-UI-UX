@@ -2,7 +2,7 @@
 import '@/components/frontend/assets/css/style.css'
 
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const AnimatedWord = () => {
   useEffect(() => {

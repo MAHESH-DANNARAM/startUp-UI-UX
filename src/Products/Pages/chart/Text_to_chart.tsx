@@ -1,4 +1,6 @@
-import { useState, FormEvent } from "react";
+import { useState, 
+  // FormEvent
+ } from "react";
 import Chart_model from "./chart_model";
 export default function Text_to_chart() {
   const [selectedForm, setSelectedForm] = useState<number | null>(null);
@@ -6,10 +8,10 @@ export default function Text_to_chart() {
   const showForm = (formId: number | null) => {
     setSelectedForm(formId);
   };
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    // Perform save changes logic here
-  };
+  // const handleSubmit = (e: FormEvent) => {
+  //   e.preventDefault();
+  //   // Perform save changes logic here
+  // };
   return (
     <>
       <div className="pt-[5rem] pl-[88%]">

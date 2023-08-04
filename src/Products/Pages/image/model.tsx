@@ -3,7 +3,9 @@ import axios from 'axios';
 
 export default function Model() {
   const [prompt, setPrompt] = useState('');
-  const [negativePrompt, setNegativePrompt] = useState('');
+  const [negativePrompt, 
+    // setNegativePrompt
+  ] = useState('');
   const [processedImage, setProcessedImage] = useState(null);
 
   const handleGenerateImage = async () => {

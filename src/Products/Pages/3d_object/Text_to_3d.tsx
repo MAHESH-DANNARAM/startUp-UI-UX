@@ -1,4 +1,6 @@
-import { useState, FormEvent } from "react";
+import { useState, 
+  // FormEvent 
+} from "react";
 import D3_model from "./3d_model";
 export default function Text_to_3d() {
   const [selectedForm, setSelectedForm] = useState<number | null>(null);
@@ -6,10 +8,10 @@ export default function Text_to_3d() {
   const showForm = (formId: number | null) => {
     setSelectedForm(formId);
   };
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    // Perform save changes logic here
-  };
+  // const handleSubmit = (e: FormEvent) => {
+  //   e.preventDefault();
+  //   // Perform save changes logic here
+  // };
   return (
     <>
       <div className="pt-[5rem] pl-[85%]">

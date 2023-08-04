@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Mermaid from "./mermaid";
 
-interface AppProps {}
 const validChartTypes: string[] = [
   "Sequence chart",
   "Class chart",
