@@ -1,6 +1,6 @@
 export default function Login() {
   return (
-    <div className="bg-center w-full bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+    <div className="bg-center w-full bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700">
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 ml-[37rem] mt-11 lg:px-8 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
