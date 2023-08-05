@@ -1,4 +1,8 @@
 /* Range slider */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
     --range-thumb-size: 36px;
 }
@@ -55,3 +59,4 @@ input[type=range]::-ms-thumb {
 input[type=range]::-moz-focus-outer {
     border: 0;
 }
+
