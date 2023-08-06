@@ -14,6 +14,7 @@ export default function Pricing() {
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-2 lg:space-y-0">
+
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold text-gray-900">
                 FREE
@@ -25,7 +26,7 @@ export default function Pricing() {
                 <span className="mr-2 text-5xl font-extrabold text-blue-500">
                   $0
                 </span>
-                <span className="text-gray-900 ">/month</span>
+                {/* <span className="text-gray-900 ">/month</span> */}
               </div>
 
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -42,9 +43,127 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Image Genration
-                  </span>
+                  <span className="text-gray-900">Image Genration</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Video Subtitles</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Pretrained Voice </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d object Genration </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">--- </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Real time voice clone </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Chart Generation </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Music Generation</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d Assets </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -60,63 +179,8 @@ export default function Pricing() {
                     ></path>
                   </svg>
                   <span className="text-gray-900">
-                    Video Subtitles
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Pretrained Voice:{" "}
-                    <span className="font-semibold">1 developer</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    3d object Genration:{" "}
-                    <span className="font-semibold text-gray-900">
-                      6 months
-                    </span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Free updates:{" "}
-                    <span className="font-semibold">6 credits</span>
+                    Total Credits:{" "}
+                    <span className="font-semibold">5 credits</span>
                   </span>
                 </li>
               </ul>
@@ -136,8 +200,9 @@ export default function Pricing() {
                 Relevant for multiple users, extended & premium support.
               </p>
               <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold text-blue-500">$99</span>
-                <span className="text-gray-900">/month</span>
+                <span className="mr-2 text-5xl font-extrabold text-blue-500">
+                  $12
+                </span>
               </div>
 
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -154,9 +219,127 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Individual configuration
-                  </span>
+                  <span className="text-gray-900">Image Genration</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Video Subtitles</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Pretrained Voice </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d object Genration </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">--- </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Real time voice clone </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Chart Generation </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Music Generation</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d Assets </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -172,61 +355,8 @@ export default function Pricing() {
                     ></path>
                   </svg>
                   <span className="text-gray-900">
-                    No setup, or hidden fees
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Team size:{" "}
-                    <span className="font-semibold">10 developers</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Premium support:{" "}
-                    <span className="font-semibold">24 months</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Free updates:{" "}
-                    <span className="font-semibold">24 months</span>
+                    Total Credits:{" "}
+                    <span className="font-semibold">144 credits</span>
                   </span>
                 </li>
               </ul>
@@ -246,8 +376,10 @@ export default function Pricing() {
                 Best for large scale uses and extended redistribution rights.
               </p>
               <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold text-blue-500">$499</span>
-                <span className="text-gray-900 ">/month</span>
+                <span className="mr-2 text-5xl font-extrabold text-blue-500">
+                  $37
+                </span>
+                {/* <span className="text-gray-900 ">/month</span> */}
               </div>
 
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -264,9 +396,127 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Individual configuration
-                  </span>
+                  <span className="text-gray-900">Image Genration</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Video Subtitles</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Pretrained Voice </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d object Genration </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">--- </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Real time voice clone </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Chart Generation </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Music Generation</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M15.293 4.293a1 1 0 010 1.414L6.414 13 15.293 21.879a1 1 0 11-1.414 1.414L5 14.414l-8.879 8.879a1 1 0 11-1.414-1.414L3.586 13 .293 9.707a1 1 0 011.414-1.414L5 11.586l3.293-3.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d Assets </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -282,61 +532,8 @@ export default function Pricing() {
                     ></path>
                   </svg>
                   <span className="text-gray-900">
-                    No setup, or hidden fees
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Team size:{" "}
-                    <span className="font-semibold">100+ developers</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Premium support:{" "}
-                    <span className="font-semibold">36 months</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-green-500 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="text-gray-900">
-                    Free updates:{" "}
-                    <span className="font-semibold">36 months</span>
+                    Total Credits:{" "}
+                    <span className="font-semibold">444 credits</span>
                   </span>
                 </li>
               </ul>
@@ -635,18 +832,18 @@ export default function Pricing() {
                   </div>
                 </div>
               </div>
-            
             </div>
+
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold text-gray-900">
-                Starter
+                Super pack
               </h3>
               <p className="font-light text-gray-900 sm:text-lg ">
                 Best option for personal use & for your next project.
               </p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-5xl font-extrabold text-blue-500">
-                  $29
+                  $100
                 </span>
                 <span className="text-gray-900 ">/month</span>
               </div>
@@ -665,9 +862,7 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Individual configuration
-                  </span>
+                  <span className="text-gray-900">Image Genration</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -682,9 +877,7 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    No setup, or hidden fees
-                  </span>
+                  <span className="text-gray-900">Video Subtitles</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -699,10 +892,7 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Team size:{" "}
-                    <span className="font-semibold">1 developer</span>
-                  </span>
+                  <span className="text-gray-900">Pretrained Voice </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -717,12 +907,7 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Premium support:{" "}
-                    <span className="font-semibold text-gray-900">
-                      6 months
-                    </span>
-                  </span>
+                  <span className="text-gray-900">3d object Genration </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -737,11 +922,86 @@ export default function Pricing() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-gray-900">
-                    Free updates:{" "}
-                    <span className="font-semibold">6 months</span>
-                  </span>
+                  <span className="text-gray-900">--- </span>
                 </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Real time voice clone </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Chart Generation </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">Music Generation</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">3d Assets </span>
+                </li>
+                {/* <li className="flex items-center space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-gray-900">
+                    Total Credits:{" "}
+                    <span className="font-semibold">444 credits</span>
+                  </span>
+                </li> */}
               </ul>
               <a
                 href="#"
@@ -750,7 +1010,9 @@ export default function Pricing() {
                 Get started
               </a>
             </div>
+
           </div>
+
           <div className="pt-6">
             <div id="detailed-pricing" className="w-full overflow-x-auto">
               <div className="overflow-hidden min-w-max">
