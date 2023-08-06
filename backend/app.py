@@ -14,7 +14,11 @@ app = Flask(__name__)
 # app.register_blueprint(music_gen_bp, url_prefix='/api/music_gen')
 # app.register_blueprint(diffuser_blueprint, url_prefix='/api/image_genration')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'  # Replace with your database URI
+app.config.from_pyfile('config.py')
 
+db.init_app(app)
+
+app.register_blueprint(users_bp, url_prefix='/api/users')
 
 if __name__ == '__main__':
     app.run(debug=True)
