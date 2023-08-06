@@ -17,7 +17,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'  # Replace 
 app.config.from_pyfile('config.py')
 
 db.init_app(app)
-
+app.register_blueprint(credit_bp, url_prefix='/api')
 app.register_blueprint(users_bp, url_prefix='/api/users')
 
 if __name__ == '__main__':
