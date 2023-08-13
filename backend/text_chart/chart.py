@@ -7,7 +7,7 @@ pie_chart_blueprint = Blueprint('pie_chart_blueprint', __name__)
 CORS(pie_chart_blueprint)  # Enable CORS for the blueprint
 
 # Configure OpenAI
-openai.api_key = "API key"
+openai.api_key = "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"
 model = "code-davinci-edit-001"
 
 # Define the route for generating the pie chart

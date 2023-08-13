@@ -47,3 +47,4 @@ librosa
 gradio
 torchmetrics
 encodec
+pyodbc
