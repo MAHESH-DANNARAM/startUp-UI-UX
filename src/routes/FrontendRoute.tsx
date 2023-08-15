@@ -7,8 +7,10 @@ import "@/assets/frontend/css/style1.css"
 import Home from '@/frontend/pages/Home'
 import Pricing from '@/frontend/pages/Pricing'
 import Test from '@/frontend/pages/test'
-import Login from '@/frontend/pages/Login'
-import Register from '@/frontend/pages/Register'
+import Login from '@/frontend/Login Details/Login'
+import Register from '@/frontend/Login Details/Register'
+import Forgot from '@/frontend/Login Details/Forgot'
+import Verify from "@/frontend/Login Details/Verification"
 
 const FrontendRoute = () => {
   return (
@@ -18,7 +20,9 @@ const FrontendRoute = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-      <Route path="/test" element={<Test />} />
+        <Route path="/forgot" element={<Forgot />} />
+        <Route path="/verify" element={<Verify />} />
+        <Route path="/test" element={<Test />} />
     </Routes>
   )
 }
