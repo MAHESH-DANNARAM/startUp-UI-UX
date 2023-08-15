@@ -1,5 +1,4 @@
 #@title Setup
-from flask import Blueprint, request, jsonify
 import gradio as gr
 import os
 import sys
@@ -8,13 +7,11 @@ from os.path import exists as path_exists
 from pathlib import Path
 from whisper.utils import get_writer
 from deep_translator import GoogleTranslator
+from google.colab import files
 from IPython.display import HTML
 from base64 import b64encode
 from IPython.display import Audio
 import whisper
-
-
-common_bp = Blueprint('common', __name__)
 
 def video2mp3(video_file, output_ext="mp3"):
     # convert to mp3
@@ -23,7 +20,6 @@ def video2mp3(video_file, output_ext="mp3"):
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.STDOUT)
     return f"{filename}.{output_ext}"
-
 
 def translate_to_en(audio):
     # en translate
@@ -34,6 +30,7 @@ def translate_to_en(audio):
 
 def translate_vtt(target, file_subs):
   translator = GoogleTranslator(source='auto', target=target)
+
   with open(os.path.join('.', file_subs), "r+") as file:
       lines = file.readlines()
       for i, line in enumerate(lines):

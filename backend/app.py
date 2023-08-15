@@ -1,5 +1,5 @@
 from flask import Flask
-from Transcript.Youtube_Mp4 import youtube_bp
+from Transcript.Youtube_sub import mp4_sub_bp
 # from Credits.Creditsassign import credit_bp
 # from text_chart.chart import pie_chart_blueprint
 # from text_music.music import music_gen_bp
@@ -13,7 +13,7 @@ app = Flask(__name__)
 # app.register_blueprint(music_gen_bp, url_prefix='/api/music_gen')
 # app.register_blueprint(diffuser_blueprint, url_prefix='/api/image_genration')
 # app.register_blueprint(credit_bp, url_prefix='/api')
-app.register_blueprint(youtube_bp, url_prefix='/youtube')
+app.register_blueprint(mp4_sub_bp, url_prefix='/api')
 
 
 if __name__ == '__main__':
