@@ -7,8 +7,16 @@ from flask import Flask
 from Login.models import db  # Assuming your SQLAlchemy db instance is defined in 'models.py'
 from Login.login import registration_bp
 
+drivers='SQL Server'
+server='DESKTOP-7ONCVVN\MAHESH'
+database= 'LOGIN'
+port= '1433'
+id= 'sa'
+password= 'Mahesh@divya'
+
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://username:password@server_name/db_name?driver=SQL+Server'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'mssql+pyodbc://{id}:{password}@{server}/{database}?driver={drivers}'
 db.init_app(app)
 
 # Register the blueprint with the app
