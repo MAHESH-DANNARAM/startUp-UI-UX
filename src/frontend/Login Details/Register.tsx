@@ -5,9 +5,43 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
+  MDBCheckbox,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Modal } from "antd";
+import Text from "@/terms & conditions.txt"
+
 function App() {
+  const [open, setOpen] = useState(false);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [modalText, setModalText] = useState("Content of the modal");
+
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const handleOk = () => {
+    setModalText("The modal will be closed after two seconds");
+    setConfirmLoading(true);
+    setTimeout(() => {
+      setOpen(false);
+      setConfirmLoading(false);
+    });
+  };
+
+  const handleCancel = () => {
+    console.log("Clicked cancel button");
+    setOpen(false);
+  };
+  useEffect(() => {
+    // Load content from a text file using fetch or axios
+    fetch(Text)
+      .then(response => response.text())
+      .then(text => setModalText(text))
+      .catch(error => console.error('Error loading text:', error));
+  }, []); // Empty dependency array means this effect runs once, like componentDidMount
+
   return (
     <MDBContainer fluid className="p-4">
       <MDBRow>
@@ -77,16 +111,31 @@ function App() {
                 id="form1"
                 type="email"
               />
-              <MDBInput
-                wrapperClass="mb-4"
-                label="Password"
-                id="form1"
-                type="password"
-              />
-
-              <button className="text-white w-100 mb-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              <div className="mb-4">
+                <MDBCheckbox
+                  onClick={showModal}
+                  name="flexCheck"
+                  value=""
+                  id="flexCheckDefault"
+                  label="check this box to continue"
+                />
+                <Modal
+                  title="Terms & Conditions"
+                  open={open}
+                  onOk={handleOk}
+                  confirmLoading={confirmLoading}
+                  onCancel={handleCancel}
+                >
+                  <p>{modalText}</p>
+                </Modal>
+              </div>
+              <Link
+                type="button"
+                to="/verify"
+                className="text-white text-center w-100 mb-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
                 Register
-              </button>
+              </Link>
 
               <div className="text-center">
                 <p>or sign up with:</p>
