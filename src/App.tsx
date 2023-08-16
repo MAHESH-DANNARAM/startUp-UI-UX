@@ -7,6 +7,7 @@ const App = () => {
   const FrontendRoute = lazy(() => import("@/routes/FrontendRoute"));
   const AboutRoute = lazy(() => import("@/routes/AboutRoute"));
   const BlogRoute = lazy(() => import("@/routes/BlogRoute"));
+  const ContactUsRoute = lazy(() => import("@/routes/ContactUsRoute"))
   return (
     <Suspense fallback={<Loader/>}>
       <Routes>
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="products/*" element={<ProductsRoute />} />
         <Route path="about/*" element={<AboutRoute />} /> 
         <Route path="blog/*" element={<BlogRoute />} />
+        <Route path="contactus/*" element={<ContactUsRoute />} />
       </Routes>
     </Suspense>
   );

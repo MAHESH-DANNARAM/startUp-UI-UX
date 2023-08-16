@@ -3,3 +3,5 @@ From Abhishek
 In About (" Page Animation, Company History, photos, Meet The Team, are pending ")
 
 In Blog (" Page Animation is pending ")
+
+In Contact Us (" Page Animation is pending ")
