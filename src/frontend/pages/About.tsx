@@ -114,7 +114,7 @@ export default function About() {
             data-wow-durationn="2.5s"
           >
             <img
-              src="/src/custom/images/hp_innovacion2.jpg"
+              src="src/custom/images/hp_innovacion2.jpg"
               alt="Fables Template"
               className="img-fluid"
             />
@@ -124,7 +124,7 @@ export default function About() {
             data-wow-durationn="2.5s"
           >
             <img
-              src="/src/custom/images/IMG_8573-1078.jpg"
+              src="src/custom/images/IMG_8573-1078.jpg"
               alt="Fables Template"
               className="img-fluid"
             />
@@ -254,7 +254,7 @@ export default function About() {
               <div className="card">
                 <img
                   className="card-img-top rounded-0 w-100"
-                  src="/src/custom/images/img2.jpg"
+                  src="src/custom/images/img2.jpg"
                   alt="Fables Template"
                 />
                 <div className="card-body">
@@ -272,7 +272,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
+                        src="src/custom/images/history-img.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -290,7 +290,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -312,7 +312,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
+                        src="src/custom/images/history-img.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -330,7 +330,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -348,65 +348,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="row">
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -428,7 +370,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
+                        src="src/custom/images/history-img.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -446,7 +388,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -464,65 +406,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="row">
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
-                        alt="Fables Template"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title fables-second-text-color">
-                          2012
-                        </h5>
-                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
-                    <div className="card">
-                      <img
-                        className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -544,7 +428,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/history-img.jpg"
+                        src="src/custom/images/history-img.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -562,7 +446,7 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -580,7 +464,123 @@ export default function About() {
                     <div className="card">
                       <img
                         className="card-img-top rounded-0 w-100"
-                        src="/src/custom/images/img3.jpg"
+                        src="src/custom/images/img3.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="row">
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/history-img.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/img3.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/img3.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="row">
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/history-img.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/img3.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2012
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/img3.jpg"
                         alt="Fables Template"
                       />
                       <div className="card-body">
@@ -701,7 +701,7 @@ export default function About() {
               <div className="row">
                 <div className="col-12 col-sm-3 text-center image-container shine-effect">
                   <img
-                    src="/src/custom/images/testimonial-img.png"
+                    src="src/custom/images/testimonial-img.png"
                     alt="Fables Template"
                     className="fables-testimonial-block-img rounded-circle"
                   />
@@ -729,7 +729,7 @@ export default function About() {
               <div className="row">
                 <div className="col-12 col-sm-3 text-center image-container shine-effect">
                   <img
-                    src="/src/custom/images/testimonial-img.png"
+                    src="src/custom/images/testimonial-img.png"
                     alt="Fables Template"
                     className="fables-testimonial-block-img rounded-circle"
                   />
@@ -757,7 +757,7 @@ export default function About() {
               <div className="row">
                 <div className="col-12 col-sm-3 text-center image-container shine-effect">
                   <img
-                    src="/src/custom/images/testimonial-img.png"
+                    src="src/custom/images/testimonial-img.png"
                     alt="Fables Template"
                     className="fables-testimonial-block-img rounded-circle"
                   />
@@ -785,7 +785,7 @@ export default function About() {
               <div className="row">
                 <div className="col-12 col-sm-3 text-center image-container shine-effect">
                   <img
-                    src="/src/custom/images/testimonial-img.png"
+                    src="src/custom/images/testimonial-img.png"
                     alt="Fables Template"
                     className="fables-testimonial-block-img rounded-circle"
                   />
@@ -837,7 +837,7 @@ export default function About() {
               <div className="card fables-team-block fables-team-data-hover fables-second-border-color">
                 <img
                   className="img-fluid"
-                  src="/src/custom/images/team1-1.jpg"
+                  src="src/custom/images/team1-1.jpg"
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -877,7 +877,7 @@ export default function About() {
               <div className="card fables-team-block fables-team-data-hover fables-second-border-color">
                 <img
                   className="img-fluid"
-                  src="/src/custom/images/team1-2.jpg"
+                  src="src/custom/images/team1-2.jpg"
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -917,7 +917,7 @@ export default function About() {
               <div className="card fables-team-block fables-team-data-hover fables-second-border-color">
                 <img
                   className="img-fluid"
-                  src="/src/custom/images/team1-3.jpg"
+                  src="src/custom/images/team1-3.jpg"
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -957,7 +957,7 @@ export default function About() {
               <div className="card fables-team-block fables-team-data-hover fables-second-border-color">
                 <img
                   className="img-fluid"
-                  src="/src/custom/images/team1-4.jpg"
+                  src="src/custom/images/team1-4.jpg"
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -995,63 +995,63 @@ export default function About() {
         <div className="owl-carousel owl-theme fables-carousel-border mt-0 mb-4 my-md-5 carousel-items-6 dots-0">
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
           <div>
             <img
-              src="/src/custom/images/partner1.jpg"
+              src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
@@ -1089,7 +1089,7 @@ export default function About() {
                 className="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"
               >
                 <img
-                  src="/src/custom/images/fables-logo.png"
+                  src="src/custom/images/fables-logo.png"
                   alt="fables template"
                 />
               </a>

@@ -1,3 +1,5 @@
 From Abhishek
 
-In About (" Animation, Company History, photos, Meet The Team are pending ")
+In About (" Page Animation, Company History, photos, Meet The Team, are pending ")
+
+In Blog (" Page Animation is pending ")
