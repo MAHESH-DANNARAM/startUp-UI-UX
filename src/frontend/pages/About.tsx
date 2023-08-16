@@ -43,7 +43,7 @@ export default function About() {
       {/* <!-- Start page content -->   */}
       <div className="container">
         <div className="my-4 my-md-5 overflow-hidden">
-          <div className="text-center mb-5 wow fadeInDown" data-wow-delay="1s">
+          <div className="text-center mb-5 wow fadeInDown" data-wow-delay="2s">
             <h3 className="fables-about-top-head fables-forth-text-color font-15 semi-font d-inline-block bg-white position-relative">
               <span className="mx-4">Services</span>
             </h3>
@@ -157,7 +157,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="row wow fadeIn" data-wow-delay=".8s">
+          <div className="row wow fadeIn" data-wow-delay="2s">
             <div className="col-6 col-md-3">
               <div className="fables-counter">
                 <h2 className="fables-counter-value font-40 font-weight-bold mb-3 fables-forth-text-color">
