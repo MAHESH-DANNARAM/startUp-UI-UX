@@ -10,6 +10,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex h-screen">
+       {/* Left Navbar content */}
       <nav className="fixed top-16 left-0 w-60 h-screen bg-white border border-gray-300">
         <li>
           <a
@@ -152,6 +153,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </nav>
 
         {children}
+
       </main>
       
       <nav className="fixed top-16 right-0 w-80 h-screen bg-white border border-gray-300">
