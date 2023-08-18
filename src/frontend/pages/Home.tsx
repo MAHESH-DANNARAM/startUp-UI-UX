@@ -1,6 +1,5 @@
 import "@/components/frontend/assets/css/creative-studio.css";
 import "@/components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
-import logo from "@/components/fats-logo/svg/logo-no-background.svg";
 export default function Home() {
   return (
     <>
