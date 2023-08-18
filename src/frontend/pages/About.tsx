@@ -1,7 +1,9 @@
+
 import { useEffect, useState } from "react";
-import WOW from 'wow.js'; 
+import WOW from "wow.js";
 
 export default function About() {
+
   const [satisfiedClients, setSatisfiedClients] = useState(0);
   const [companyMembers, setCompanyMembers] = useState(0);
   const [awwardsWin, setAwwardsWin] = useState(0);
@@ -22,7 +24,7 @@ export default function About() {
         } else {
           setterFunction(currentValue);
         }
-      }, 20); // Adjust the interval as needed
+      }, 50); // Adjust the interval as needed
     };
 
     incrementCounter(307, setSatisfiedClients);
@@ -34,22 +36,14 @@ export default function About() {
   useEffect(() => {
     const wow = new WOW(); // Initialize wow.js
     wow.init();
-  }, []); // Run this effect only once, when the component mounts
+  }, []);
 
   return (
     <>
-      {/* <!-- Loading Screen --> */}
-      {/* <div id="ju-loading-screen">
-        <div className="sk-double-bounce">
-          <div className="sk-child sk-double-bounce1"></div>
-          <div className="sk-child sk-double-bounce2"></div>
-        </div>
-      </div> */}
-
       {/* <!-- Start page content -->   */}
       <div className="container">
         <div className="my-4 my-md-5 overflow-hidden">
-          <div className="text-center mb-5 wow fadeInDown" data-wow-delay="2s">
+          <div className="text-center mb-5 wow fadeInDown" data-wow-delay="1s">
             <h3 className="fables-about-top-head fables-forth-text-color font-15 semi-font d-inline-block bg-white position-relative">
               <span className="mx-4">Services</span>
             </h3>
@@ -137,7 +131,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       <div className="fables-counter-no-background my-4 my-md-5 overflow-hidden">
         <div className="container">
           <div className="fables-about-head-style">
@@ -163,7 +156,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="row wow fadeIn" data-wow-delay="2s">
+          <div className="row wow fadeIn" data-wow-delay=".0s">
             <div className="col-6 col-md-3">
               <div className="fables-counter">
                 <h2 className="fables-counter-value font-40 font-weight-bold mb-3 fables-forth-text-color">
@@ -233,47 +226,47 @@ export default function About() {
             </div>
           </div>
           <div className="fables-history-carousel">
-      <div id="sync2" className="owl-carousel owl-theme">
-        <div className="item">
-          <h1>2010</h1>
-        </div>
-        <div className="item">
-          <h1>2012</h1>
-        </div>
-        <div className="item">
-          <h1>2014</h1>
-        </div>
-        <div className="item">
-          <h1>2016</h1>
-        </div>
-        <div className="item">
-          <h1>2018</h1>
-        </div>
-        <div className="item">
-          <h1>2020</h1>
-        </div>
-      </div>
-      <div id="sync1" className="owl-carousel owl-theme">
-        <div className="item">
-          <div className="row">
-            <div className="col-12 col-sm-4 mb-4 mb-md-0">
-              <div className="card">
-                <img
-                  className="card-img-top rounded-0 w-100"
-                  src="src/custom/images/img2.jpg"
-                  alt="Fables Template"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fables-second-text-color">
-                    2010
-                  </h5>
-                  <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when{" "}
-                  </p>
-                </div>
+            <div id="sync2" className="owl-carousel owl-theme">
+              <div className="item">
+                <h1>2010</h1>
+              </div>
+              <div className="item">
+                <h1>2012</h1>
+              </div>
+              <div className="item">
+                <h1>2014</h1>
+              </div>
+              <div className="item">
+                <h1>2016</h1>
+              </div>
+              <div className="item">
+                <h1>2018</h1>
+              </div>
+              <div className="item">
+                <h1>2020</h1>
               </div>
             </div>
+            <div id="sync1" className="owl-carousel owl-theme">
+              <div className="item">
+                <div className="row">
+                  <div className="col-12 col-sm-4 mb-4 mb-md-0">
+                    <div className="card">
+                      <img
+                        className="card-img-top rounded-0 w-100"
+                        src="src/custom/images/img2.jpg"
+                        alt="Fables Template"
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title fables-second-text-color">
+                          2010
+                        </h5>
+                        <p className="card-text fables-forth-text-color d-sm-none d-md-block font-15">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="col-12 col-sm-4 mb-4 mb-md-0">
                     <div className="card">
                       <img
@@ -609,7 +602,7 @@ export default function About() {
 
       <div
         className="bg-rules mb-4 mb-lg-0 py-3 py-lg-0"
-        style={{ backgroundImage: "url(assets/custom/images/mission-img.jpg)" }}
+        style={{ backgroundImage: "url(src/custom/images/mission-img.jpg)" }}
       >
         <div className="container-fluid">
           <div className="row overflow-hidden">
@@ -621,7 +614,6 @@ export default function About() {
                 >
                   We love what we do <br /> &amp; we do it with passion!
                 </h2>
-
                 <p
                   className="fables-fifth-text-color position-relative z-index mt-4 mb-4 mb-md-5 wow fadeInRight"
                   data-wow-duration="2s"
@@ -632,7 +624,6 @@ export default function About() {
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. and a search for 'lorem ipsum' will uncover.
     `}
                 </p>
-
                 <a
                   href=""
                   className="btn fables-second-border-color white-color fables-btn-rouned fables-hover-btn-color font-19 px-5 py-2 position-relative z-index wow fadeInRight"
@@ -647,7 +638,7 @@ export default function About() {
       </div>
       <div
         className="bg-rules mb-4 py-3 py-lg-0"
-        style={{ backgroundImage: "url(assets/custom/images/vision-img.jpg)" }}
+        style={{ backgroundImage: "url(src/custom/images/vision-img.jpg)" }}
       >
         <div className="container-fluid">
           <div className="row overflow-hidden">
@@ -659,7 +650,6 @@ export default function About() {
                 >
                   We gain the trust and loyalty of <br /> our Clients
                 </h2>
-
                 <p
                   className="fables-forth-text-color position-relative z-index mt-4 mb-4 mb-md-5 wow fadeInLeft"
                   data-wow-duration="2s"
@@ -670,7 +660,6 @@ export default function About() {
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. and a search for 'lorem ipsum' will uncover.
     `}
                 </p>
-
                 <a
                   href=""
                   className="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-19 px-5 py-2 position-relative z-index wow fadeInLeft"
@@ -998,17 +987,17 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="owl-carousel owl-theme fables-carousel-border mt-0 mb-4 my-md-5 carousel-items-6 dots-0">
-          <div>
+        <div className="fables-partner-carousel owl-carousel owl-theme fables-carousel-border mt-0 mb-4 my-md-5 carousel-items-6 dots-0">
+          <div className="item wow fadeInUp" data-wow-delay="0.3s">
             <img
               src="src/custom/images/partner1.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />
           </div>
-          <div>
+          <div className="item wow fadeInUp" data-wow-delay="0.6s">
             <img
-              src="src/custom/images/partner1.jpg"
+              src="src/custom/images/partner2.jpg"
               alt="Fables Template"
               className="fables-partner-carousel-img fables-third-border-color"
             />

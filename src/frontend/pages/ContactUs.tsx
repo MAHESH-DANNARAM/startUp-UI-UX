@@ -129,7 +129,7 @@ export default function ContactUs() {
               id="map"
               data-lng="31.248848"
               data-lat="29.966324"
-              data-icon="assets/custom/images/map-marker.png"
+              data-icon="src/custom/images/map-marker.png"
               data-zom="12" // I assume this was meant to be "data-zoom"
               style={{ width: "100%", height: "420px" }}
             ></div>
