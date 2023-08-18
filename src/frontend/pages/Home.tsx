@@ -69,7 +69,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/api">
                     API
                   </a>
                 </li>
