@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import WOW from 'wow.js'; 
 
 export default function About() {
   const [satisfiedClients, setSatisfiedClients] = useState(0);
@@ -29,6 +30,11 @@ export default function About() {
     incrementCounter(55, setAwwardsWin);
     incrementCounter(16, setYearsExperience);
   }, []);
+
+  useEffect(() => {
+    const wow = new WOW(); // Initialize wow.js
+    wow.init();
+  }, []); // Run this effect only once, when the component mounts
 
   return (
     <>

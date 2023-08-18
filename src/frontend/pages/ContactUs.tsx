@@ -1,4 +1,11 @@
+import { useEffect } from 'react';
+import WOW from 'wow.js'; 
+
 export default function ContactUs() {
+  useEffect(() => {
+    const wow = new WOW(); // Initialize wow.js
+    wow.init();
+  }, []); // Run this effect only once, when the component mounts
   return (
     <>
       {/* <!-- Start page content -->  */}

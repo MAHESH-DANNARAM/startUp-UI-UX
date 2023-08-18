@@ -1,4 +1,12 @@
+import { useEffect } from 'react';
+import WOW from 'wow.js'; // Import the wow.js library
+
 export default function Blog() {
+  useEffect(() => {
+    const wow = new WOW(); // Initialize wow.js
+    wow.init();
+  }, []); // Run this effect only once, when the component mounts
+
   return (
     <>
       {/* <!-- Start page content -->   */}
