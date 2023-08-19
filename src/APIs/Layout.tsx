@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
-import "@/components/frontend/assets/css/codebox.css";
 import { sample } from "./components";
+import "@/components/frontend/assets/css/codebox.css";
 import "@/components/frontend/assets/css/style1.css";
 
 type LanguageOption = keyof typeof sample;
@@ -121,7 +121,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
 
-      <nav className="fixed top-16 right-0 w-100 h-screen bg-white border border-gray-300">
+      {/* Right Navbar content */}
+      <nav className="fixed top-16 right-0 w-[26rem] fle h-screen bg-white border border-gray-300">
         <div className="container p-4">
           <div className="top-bar">
             {/* Language dropdown */}
@@ -144,7 +145,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </label>
           </div>
 
-          <div className="demo">
+          <div className="">
             <CopyBlock
               text={languageDemo}
               language={language}

@@ -1,14 +1,1 @@
-From Abhishek
-
-In About (" Page Animation, Company History, photos, Meet The Team, are pending ")
-
-In Blog (" Page Animation is pending ")
-
-In Contact Us (" Page Animation is pending ")
-
-I created API file in that to files are there 
-   
-    1.Layout(Parent file)
-    2.Api.tsx(Children file)
-
-in layout left nav there need to over wirte the CSS to clear the dot's
+From Abhishek completed
