@@ -3,7 +3,7 @@
 import React from 'react';
 import Layout from '@/APIs/Layout';
 
-const App: React.FC = () => {
+const Api: React.FC = () => {
   return (
     <Layout>
       <div className="p-4">
@@ -14,4 +14,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Api;

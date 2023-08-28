@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "@/APIs/Api";
+import Api from "@/APIs/Api";
 
 
-const AboutRoute = () => {
+const ApiRoute = () => {
     return (
       <Routes>
-        <Route path="/" element={<Layout />}></Route>
+        <Route path="/" element={<Api />}></Route>
       </Routes>
     );
   };
-  export default AboutRoute;
+  export default ApiRoute;

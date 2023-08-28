@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function Model() {
   const [prompt, setPrompt] = useState('');
-  const [negativePrompt, 
+  const [negativePrompt,
     // setNegativePrompt
   ] = useState('');
   const [processedImage, setProcessedImage] = useState(null);
@@ -25,7 +25,7 @@ export default function Model() {
 
   return (
     <>
-      <div id="component-2" className="svelte-10ogue4 pl-96 pr-12 ">
+      <div id="component-2" className="svelte-10ogue4 pl-[22%] pr-12 ">
         <div
           id="component-3"
           className="gr-block gr-box relative w-full overflow-hidden border-solid border rounded-lg gr-padded"
@@ -61,7 +61,7 @@ export default function Model() {
                         className=" w-full h-9 border-t-white border-b-white"
                         placeholder="Enter your prompt"
                         value={prompt}
-        onChange={(e) => setPrompt(e.target.value)}
+                        onChange={(e) => setPrompt(e.target.value)}
                       />
                     </label>
                   </div>
@@ -87,7 +87,7 @@ export default function Model() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 mr-0 mb-4 mt-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 id="component-9"
-        onClick={handleGenerateImage}
+                onClick={handleGenerateImage}
               >
                 Generate image
               </button>
@@ -131,10 +131,10 @@ export default function Model() {
                   </div>
                 </div>
                 {processedImage && (
-        <div>
-          <img src={processedImage} alt="Processed" />
-        </div>
-      )}
+                  <div>
+                    <img src={processedImage} alt="Processed" />
+                  </div>
+                )}
               </div>
             </div>
           </div>

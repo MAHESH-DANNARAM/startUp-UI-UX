@@ -1,31 +1,41 @@
-import { useState, 
-  // FormEvent 
-} from "react";
+import { useState } from "react";
 import Model from "./model";
 
 export default function Text_to_Image() {
-  const [selectedForm, setSelectedForm] = useState<number | null>(null);
+  const [selectedForm, setSelectedForm] = useState<string | null>(null);
 
-  const showForm = (formId: number | null) => {
+  const showForm = (formId: string | null) => {
     setSelectedForm(formId);
   };
-  // const handleSubmit = (e: FormEvent) => {
-  //   e.preventDefault();
-  //   // Perform save changes logic here
-  // };
+
+  const handleCancel = () => {
+    setSelectedForm(null); // Reset the selectedForm state to null
+  };
   return (
     <>
       <div className="pt-[5rem] pl-[88%]">
-        <button
-          type="button"
-          value="form1"
-          name="flexRadioDefault"
-          className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-          onClick={() => showForm("form1" as unknown as number)}
-          id="flexRadioDefault1"
-        >
-          Gnerate Image
-        </button>
+        {selectedForm !== "form1" ? (
+          <button
+            type="button"
+            value="form1"
+            name="flexRadioDefault"
+            className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            onClick={() => showForm("form1")}
+            id="flexRadioDefault1"
+          >
+            Generate Image
+          </button>
+        ) : (
+          <div className="flex">
+            <button
+              type="button"
+              className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-2 mb-2"
+              onClick={handleCancel}
+            >
+              Cancel
+            </button>
+          </div>
+        )}
       </div>
       {selectedForm === ("form1" as unknown) && <Model />}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10">
@@ -68,7 +78,7 @@ export default function Text_to_Image() {
               reality and evoke emotions through abstract symbolism
             </span>
           </div>
-          
+
         </div>
         <div className="grid gap-4">
           <div>

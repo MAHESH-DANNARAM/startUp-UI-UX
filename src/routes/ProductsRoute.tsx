@@ -6,14 +6,15 @@ import Chart from "@/Products/Pages/chart/chart";
 import Text_to_Image from "@/Products/Pages/image/Text_to_Image";
 import Music from "@/Products/Pages/music/music";
 import Text_to_Voice from "@/Products/Pages/voice/text_to_voice";
+import Transcripts from "@/Products/Pages/Transcripts/Layout"
 import Ann from "@/Products/ann";
-import Test from "@/frontend/pages/test";
+// import Test from "@/frontend/pages/test";
 
 const Product = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />} >
-      <Route path="/test" element={<Test />} />
+      {/* <Route path="/test" element={<Test children={undefined} />} /> */}
          {/* <Route index element={<Demo />} /> */}
          <Route path="/image" element={<Text_to_Image />} />
           {/* <Route path="/model" element={<Model/>} /> */}
@@ -23,6 +24,7 @@ const Product = () => {
           <Route path="/a" element={<Ann/>} />
           <Route path="/chart1" element={<Chart/>} />
           <Route path="/music" element={<Music />} />
+          <Route path="/transcripts" element={<Transcripts />} />
         </Route>
     </Routes>
   );
