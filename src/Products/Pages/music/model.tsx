@@ -4,7 +4,7 @@ export default function Model() {
   const [prompts, setPrompts] = useState("");
   const [duration, setDuration] = useState("");
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       const response = await axios.post(
@@ -21,9 +21,14 @@ export default function Model() {
       document.body.appendChild(link);
       link.click();
     } catch (error) {
-      console.error("Error:", (error as any).response?.data || error);
+      if (axios.isAxiosError(error)) {
+        console.error("Axios Error:", error.response?.data || error.message);
+      } else {
+        console.error("Error:", error);
+      }
     }
   };
+  
   return (
     <>
       <div id="component-2" className="svelte-10ogue4 pl-96 pr-12 ">

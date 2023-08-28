@@ -41,7 +41,6 @@ export default function Chart_model() {
     }
 
     const url = "http://127.0.0.1:5000/generate_pie_chart";
-
     const headers = { "Content-Type": "application/json" };
     const instruction = `Generate Mermaid Markdown text for ${selectedChartType} ${prompt}`;
     const data = { instruction };
@@ -71,9 +70,9 @@ export default function Chart_model() {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setError("");
-    setChartDefinition(event.target.value);
     setSelectedChartType(event.target.value);
   };
+
   const handleChartChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setError("");
     setChartDefinition(event.target.value);
@@ -84,6 +83,7 @@ export default function Chart_model() {
     setError(""); // Clear the error message
     generateDiagram();
   };
+
 
   return (
     <>

@@ -3,16 +3,12 @@ import axios from 'axios';
 
 export default function Model() {
   const [prompt, setPrompt] = useState('');
-  const [negativePrompt,
-    // setNegativePrompt
-  ] = useState('');
   const [processedImage, setProcessedImage] = useState(null);
 
   const handleGenerateImage = async () => {
     try {
       const response = await axios.post('/api/image_generation/process_image', {
         prompt: prompt,
-        negativePrompt: negativePrompt,
       });
 
       if (response.data && response.data.image) {
