@@ -24,7 +24,7 @@ export default function Home() {
                 width="60"
                 height="60"
                 viewBox="0 0 1000 623"
-                style={{color:"red"}}
+                style={{ color: "red" }}
               >
                 <g transform="matrix(1,0,0,1,-0.6060606060606233,0.2522267206477409)">
                   <svg
@@ -494,7 +494,7 @@ export default function Home() {
 
         <header className="header">
           <div className="overlay">
-            <h1 className="title">Creative Studio</h1>
+            <h1 className="title pt-[5%]">Creative Studio</h1>
             <h1 className="subtitle">Small Team With Big Ideas</h1>
             <div className="buttons text-center">
               <a
@@ -517,26 +517,29 @@ export default function Home() {
           <div className="box text-center">
             <div className="box-item">
               <i className="ti-vector"></i>
-              <h6 className="box-title">UX/UI Design</h6>
+              <h6 className="box-title">AI development</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                excepturi, repellat esse laborum explicabo quia.
+                AI development involves creating algorithms that enable machines
+                to perform tasks requiring human-like intelligence, such as
+                learning and problem-solving.
               </p>
             </div>
             <div className="box-item">
               <i className="ti-filter"></i>
               <h6 className="box-title">Web Development</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                excepturi, repellat esse laborum explicabo quia.
+                Web development encompasses designing, building, and maintaining
+                websites, involving various technologies like HTML, CSS,
+                JavaScript, and backend frameworks for functionality .
               </p>
             </div>
             <div className="box-item">
               <i className="ti-mobile"></i>
               <h6 className="box-title">App Design</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                excepturi, repellat esse laborum explicabo quia.
+                App design is crafting user interfaces for mobile or desktop
+                applications, focusing on aesthetics, usability, and user
+                experience to enhance engagement.
               </p>
             </div>
           </div>
@@ -556,20 +559,22 @@ export default function Home() {
                 <h6 className="section-subtitle mb-0">We Create</h6>
                 <h6 className="section-title mb-3">Awesome Work</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sapiente cupiditate quas, amet harum perferendis minus, cum
-                  dolorum obcaecati iste aspernatur voluptatum aut.
+                  We specialize in AI product development for automation,
+                  spanning Virtual Reality (VR) and Augmented Reality (AR)
+                  solutions. Our VR applications, enhanced by AI, cater to
+                  diverse sectors such as gaming, education, and film.
                 </p>
                 <p>
-                  Cum laudantium unde nemo doloribus eligendi quodarum ea vitae
-                  dicta. Accusantium vero, ea? Alias, atque libero. Id, ut
-                  harum.{" "}
+                  Leveraging open-world AR applications through mobile apps, we
+                  offer immersive experiences. In the realm of pharmacy, AI
+                  drives automation, streamlining processes.{" "}
                 </p>
                 <p>
-                  consectetur adipisicing elit. Omnis quidem, quos iure a
-                  dolorum illum culpa quia nemo soluta, ratione harum beatae
-                  minus doloribus consectetur! Similique tempora sunt doloribus
-                  molestias.
+                  Moreover, our expertise extends to automating digital
+                  marketing procedures. With a focus on innovation, efficiency,
+                  and user experience, we're committed to revolutionizing
+                  industries through the synergy of AI, VR, AR, and automation
+                  technologies.
                 </p>
               </div>
             </div>
@@ -857,7 +862,7 @@ export default function Home() {
           <div className="container">
             <h6 className="section-subtitle text-center">Meet With</h6>
             <h6 className="section-title mb-5 text-center">Our Team</h6>
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-6 col-md-4">
                 <div className="card text-center mb-4">
                   <img
@@ -1210,7 +1215,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            
           </div>
         </section>
 

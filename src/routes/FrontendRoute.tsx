@@ -4,9 +4,9 @@ import "@/assets/frontend/css/style1.css"
 // import "@/assets/frontend/css/additional-styles/theme.css"
 // import "@/assets/frontend/css/additional-styles/toggle-switch.css"
 // import "@/assets/frontend/css/additional-styles/utility-patterns.css"
+// import Test from '@/frontend/pages/test'
 import Home from '@/frontend/pages/Home'
 import Pricing from '@/frontend/pages/Pricing'
-// import Test from '@/frontend/pages/test'
 import Login from '@/frontend/Login Details/Login'
 import Register from '@/frontend/Login Details/Register'
 import Forgot from '@/frontend/Login Details/Forgot'
