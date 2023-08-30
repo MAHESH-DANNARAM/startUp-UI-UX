@@ -27,3 +27,42 @@ body{
     background: black;
 }
 
+.containers1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .letters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+  }
+  
+  .letter {
+    margin: 0 5px;
+    transition: color 0.3s ease-in-out, transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+  }
+  
+  .letter.active {
+    color: #e74c3c;
+    transform: scale(1.05);
+  }
+  
+  .text-below {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .text-below.full-name {
+    opacity: 0;
+    transform: translateY(10px);
+  }

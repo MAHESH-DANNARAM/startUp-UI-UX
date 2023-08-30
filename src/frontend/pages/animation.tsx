@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import "@/assets/frontend/css/style1.css"
-import "@/components/frontend/assets/css/creative-studio.css";
-import "@/components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
 
-const App = () => {
+
+const Animation = () => {
   const letters = ['F', 'A', 'T', 'S'];
   const [activeIndex, setActiveIndex] = useState(0);
   const [showFullName, setShowFullName] = useState(false);
@@ -36,22 +35,22 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div className="containers1">
       <div className="letters">
         {letters.map((letter, index) => (
-          <span
+          <span 
             key={index}
-            className={`letter ${activeIndex === index ? 'active' : ''}`}
+            className={`letter ${activeIndex === index ? 'active' : ''}title pt-[5%]`}
           >
             {letter}
           </span>
         ))}
       </div>
-      <div className={`text-below ${showFullName ? 'full-name' : ''}`}>
+      <div className="text-below">
         {showFullName ? 'FUTURE AI TECHNOLOGY\'S' : renderAnimatedText()}
       </div>
     </div>
   );
 };
 
-export default App;
+export default Animation;

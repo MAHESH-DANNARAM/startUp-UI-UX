@@ -1,5 +1,6 @@
 import "@/components/frontend/assets/css/creative-studio.css";
 import "@/components/frontend/assets/vendors/themify-icons/css/themify-icons.css";
+import Animation from "@/frontend/pages/animation"
 export default function Home() {
   return (
     <>
@@ -494,8 +495,7 @@ export default function Home() {
 
         <header className="header">
           <div className="overlay">
-            <h1 className="title pt-[5%]">Creative Studio</h1>
-            <h1 className="subtitle">Small Team With Big Ideas</h1>
+            <Animation/>
             <div className="buttons text-center">
               <a
                 href="#service"
