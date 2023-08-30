@@ -8,7 +8,7 @@ import Music from "@/Products/Pages/music/music";
 import Text_to_Voice from "@/Products/Pages/voice/text_to_voice";
 import Transcripts from "@/Products/Pages/Transcripts/Layout"
 import Ann from "@/Products/ann";
-// import Test from "@/frontend/pages/test";
+import Test from "@/Products/Pages/Transcripts/test";
 
 const Product = () => {
   return (
@@ -25,6 +25,7 @@ const Product = () => {
           <Route path="/chart1" element={<Chart/>} />
           <Route path="/music" element={<Music />} />
           <Route path="/transcripts" element={<Transcripts />} />
+          <Route path="/test" element={<Test />} />
         </Route>
     </Routes>
   );
