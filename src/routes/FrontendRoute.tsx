@@ -7,10 +7,9 @@ import "@/assets/frontend/css/style1.css"
 // import Test from '@/frontend/pages/test'
 import Home from '@/frontend/pages/Home'
 import Pricing from '@/frontend/pages/Pricing'
-<<<<<<< HEAD
+
 import Test from '@/frontend/pages/test'
-=======
->>>>>>> 3d174f9073859d2ff03b5f32d3e76c0644658a0a
+
 import Login from '@/frontend/Login Details/Login'
 import Register from '@/frontend/Login Details/Register'
 import Forgot from '@/frontend/Login Details/Forgot'
