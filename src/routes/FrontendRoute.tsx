@@ -6,7 +6,7 @@ import "@/assets/frontend/css/style1.css"
 // import "@/assets/frontend/css/additional-styles/utility-patterns.css"
 import Home from '@/frontend/pages/Home'
 import Pricing from '@/frontend/pages/Pricing'
-// import Test from '@/frontend/pages/test'
+import Test from '@/frontend/pages/test'
 import Login from '@/frontend/Login Details/Login'
 import Register from '@/frontend/Login Details/Register'
 import Forgot from '@/frontend/Login Details/Forgot'
@@ -24,7 +24,7 @@ const FrontendRoute = () => {
         <Route path="/forgot" element={<Forgot />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/createpw" element={<CreatePw />} />
-        {/* <Route path="/test" element={<Test />} /> */}
+        <Route path="/test" element={<Test />} />
     </Routes>
   )
 }

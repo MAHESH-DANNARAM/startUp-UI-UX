@@ -33,9 +33,11 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.12.0",
     "styled-components": "^6.0.5",
+    "tw-elements": "^1.0.0-rc.1",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.4",
     "@types/node": "^20.2.5",
     "@types/react": "^18.0.37",
     "@types/react-datepicker": "^4.11.2",

@@ -11789,7 +11789,8 @@ pre .code {
 }
 
 .header .overlay {
-  position: absolute;
+  position: none;
+  padding: 13rem;
   left: 0;
   top: 0;
   width: 100%;

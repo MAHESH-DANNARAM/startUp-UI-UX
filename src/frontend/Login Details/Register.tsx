@@ -7,15 +7,22 @@ import {
   MDBInput,
   MDBCheckbox,
 } from "mdb-react-ui-kit";
+import axios from 'axios';
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect,  } from "react";
 import { Modal } from "antd";
 import Text from "@/terms & conditions.txt"
+
 
 function App() {
   const [open, setOpen] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [modalText, setModalText] = useState("Content of the modal");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [username, setUsername] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
 
   const showModal = () => {
     setOpen(true);
@@ -42,6 +49,41 @@ function App() {
       .catch(error => console.error('Error loading text:', error));
   }, []); // Empty dependency array means this effect runs once, like componentDidMount
 
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+  
+    // Prepare user data
+    const userData = {
+      first_name: firstName,
+      last_name: lastName,
+      username: username,
+      phone_number: phoneNumber,
+      email: email,
+    };
+  
+    console.log("Sending user data:", userData); // Log the data being sent
+  
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:8000/insert_user/",
+        userData,
+        {
+          headers: {
+            "Content-Type": "application/json", // Use JSON content type
+          },
+        }
+      );
+  
+      // Handle successful response
+      console.log('User data inserted successfully:', response.data);
+    } catch (error) {
+      // Handle error
+      console.error('Error inserting user:', error);
+    }
+  };
+  
+
+  
   return (
     <MDBContainer fluid className="p-4">
       <MDBRow>
@@ -61,10 +103,11 @@ function App() {
             aliquid ipsum atque?
           </p>
         </MDBCol>
-
+      
         <MDBCol md="6">
           <MDBCard className="my-5">
             <MDBCardBody className="p-5">
+            <form onSubmit={handleSubmit}>
               <MDBRow>
                 <MDBCol col="6">
                   <MDBInput
@@ -72,6 +115,8 @@ function App() {
                     label="First name"
                     id="form1"
                     type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                   />
                 </MDBCol>
 
@@ -81,6 +126,8 @@ function App() {
                     label="Last name"
                     id="form1"
                     type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                   />
                 </MDBCol>
               </MDBRow>
@@ -92,6 +139,8 @@ function App() {
                     label="username"
                     id="form1"
                     type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                 </MDBCol>
 
@@ -101,6 +150,8 @@ function App() {
                     label="Phone number"
                     id="form1"
                     type="number"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                   />
                 </MDBCol>
               </MDBRow>
@@ -110,6 +161,8 @@ function App() {
                 label="Email"
                 id="form1"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div className="mb-4">
                 <MDBCheckbox
@@ -129,14 +182,22 @@ function App() {
                   <p>{modalText}</p>
                 </Modal>
               </div>
-              <Link
+              {/* <Link
                 type="button"
                 to="/verify"
                 className="text-white text-center w-100 mb-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
                 Register
-              </Link>
+              </Link> */}
 
+              <button
+                  type="submit"
+                  className="text-white text-center w-100 mb-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                  Register
+                </button>
+              </form>
+             
               <div className="text-center">
                 <p>or sign up with:</p>
                 <div className=" container">
@@ -150,9 +211,9 @@ function App() {
                         viewBox="0 0 8 19"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         />
                       </svg>
                     </Link>
@@ -166,9 +227,9 @@ function App() {
                         viewBox="0 0 20 17"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         />
                       </svg>
                     </Link>
@@ -182,9 +243,9 @@ function App() {
                         viewBox="0 0 18 19"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M8.842 18.083a8.8 8.8 0 0 1-8.65-8.948 8.841 8.841 0 0 1 8.8-8.652h.153a8.464 8.464 0 0 1 5.7 2.257l-2.193 2.038A5.27 5.27 0 0 0 9.09 3.4a5.882 5.882 0 0 0-.2 11.76h.124a5.091 5.091 0 0 0 5.248-4.057L14.3 11H9V8h8.34c.066.543.095 1.09.088 1.636-.086 5.053-3.463 8.449-8.4 8.449l-.186-.002Z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         />
                       </svg>
                     </Link>
