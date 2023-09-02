@@ -53,7 +53,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/ser/services">
                     Services
                   </a>
                 </li>

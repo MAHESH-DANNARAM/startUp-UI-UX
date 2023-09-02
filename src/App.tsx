@@ -9,6 +9,7 @@ const App = () => {
   const BlogRoute = lazy(() => import("@/routes/BlogRoute"));
   const ContactUsRoute = lazy(() => import("@/routes/ContactUsRoute"));
   const ApiRoute = lazy(() => import("@/routes/ApiRoute"));
+  const ServicesRoute = lazy(() => import("@/routes/ServicesRoutes"));
   return (
     <Suspense fallback={<Loader/>}>
       <Routes>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="blog/*" element={<BlogRoute />} />
         <Route path="contactus/*" element={<ContactUsRoute />} />
         <Route path="api/*" element={<ApiRoute />} />
+        <Route path="ser/*" element={<ServicesRoute />} />
       </Routes>
     </Suspense>
   );
